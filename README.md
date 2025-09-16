@@ -3,7 +3,7 @@
 Este repositorio está preparado para alojar el desarrollo de un videojuego de aventura estilo TopDown.
 
 # 🧪 Estado actual
-El juego aún no está desarrollado. Este repositorio servirá como base para documentar ideas, prototipos y avances.
+El juego esta en fase de prototipado para ensayar mecánicas y estructura de niveles.
 
 # 📦 Estructura prevista
 - Assets/: Assets del juego (sprites, sonidos, etc.)
