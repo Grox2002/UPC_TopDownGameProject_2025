@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     [Header("Health Settings")]
     [SerializeField] private int _maxHealth = 1000;
     [SerializeField] private int _currentHealth;
-    [SerializeField] private int _projectileReflectedByPlayer;
+    [SerializeField] private int _playerBulletDamage;
     private SpriteRenderer _spriteRenderer;
 
 
@@ -218,7 +218,7 @@ public class Boss : MonoBehaviour
     {
         if (other.CompareTag("PlayerBullet"))
         {
-            TakeDamage(_projectileReflectedByPlayer); 
+            TakeDamage(_playerBulletDamage); 
             Destroy(other.gameObject);
         }
     }

@@ -424,8 +424,9 @@ MonoBehaviour:
   - {fileID: 92968515}
   _enemy:
   - {fileID: 7945755580616898904, guid: aec3255fea73b3d4c9d6eb3405a4d7fd, type: 3}
-  _spawnTime: 8
+  _spawnTime: 5
   _activeSpawn: 1
+  _maxEnemies: 4
 --- !u!4 &92968515
 Transform:
   m_ObjectHideFlags: 0
@@ -787,8 +788,9 @@ MonoBehaviour:
   - {fileID: 241319504}
   _enemy:
   - {fileID: 1344183990874174926, guid: 3121e7a4d2dbf0c4cbff0e0372b07c5b, type: 3}
-  _spawnTime: 8
+  _spawnTime: 5
   _activeSpawn: 1
+  _maxEnemies: 4
 --- !u!4 &241319504
 Transform:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 
-public class MeleeController : MonoBehaviour
+public class MeleeController : MonoBehaviour 
 {
     private Animator _animator;
 
@@ -11,21 +11,16 @@ public class MeleeController : MonoBehaviour
     [SerializeField] private GameObject _hitBoxDown;
     [SerializeField] private GameObject _hitBoxLeft;
     [SerializeField] private GameObject _hitBoxRight;
-    //
-    /*
-    
-    [SerializeField] private float _attackCooldown = 1f;
-    [SerializeField] private float _meleeAttackRange = 0.5f;
-    [SerializeField] private int _meleeDamage;
+  
+    [SerializeField] private float _attackCooldown = 0.5f;
    
-
-    private float _nextAttack;
-    */
+    private float _nextAttackTime;
+    
 
     private void Start()
     {
         DisableAllHitboxes();
-        Debug.Log("Hitboxes desactivados al inicio");
+
         _animator = GetComponentInParent<Animator>();
 
     }
@@ -36,8 +31,6 @@ public class MeleeController : MonoBehaviour
     }
 
 
-   
-
     void DisableAllHitboxes()
     {
         _hitBoxUp.SetActive(false);
@@ -46,32 +39,46 @@ public class MeleeController : MonoBehaviour
         _hitBoxRight.SetActive(false);
     }
 
+
     public void MeleeAttack()
     {
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.E))
+        if (Time.time < _nextAttackTime) return;
+
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Space))
         {
-            _hitBoxUp.SetActive(true);
-            _animator.SetInteger("Direction", 0);
-            _animator.SetTrigger("MeleeAttack");
+            StartCoroutine(ActivateHitboxTemporarily(_hitBoxUp));
+            //_animator.SetInteger("Direction", 0);
+            //_animator.SetTrigger("MeleeAttack");
         }
-        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.Space))
         {
-            _hitBoxDown.SetActive(true);
-            _animator.SetInteger("Direction", 1);
-            _animator.SetTrigger("MeleeAttack");
+            StartCoroutine(ActivateHitboxTemporarily(_hitBoxDown));
+            //_animator.SetInteger("Direction", 1);
+            //_animator.SetTrigger("MeleeAttack");
         }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Space))
         {
-            _hitBoxLeft.SetActive(true);
-            _animator.SetInteger("Direction", 2);
-            _animator.SetTrigger("MeleeAttack");
+            StartCoroutine(ActivateHitboxTemporarily(_hitBoxLeft));
+            //_animator.SetInteger("Direction", 2);
+            //_animator.SetTrigger("MeleeAttack");
         }
-        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Space))
         {
-            _hitBoxRight.SetActive(true);
-            _animator.SetInteger("Direction", 3);
-            _animator.SetTrigger("MeleeAttack");
+            StartCoroutine(ActivateHitboxTemporarily(_hitBoxRight));
+            //_animator.SetInteger("Direction", 3);
+            //_animator.SetTrigger("MeleeAttack");
         }
+
+        _nextAttackTime = Time.time + _attackCooldown;
+    }
+
+
+
+private IEnumerator ActivateHitboxTemporarily(GameObject hitbox)
+    {
+        hitbox.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        hitbox.SetActive(false);
     }
 
 }

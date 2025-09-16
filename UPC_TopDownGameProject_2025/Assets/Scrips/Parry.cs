@@ -1,50 +1,68 @@
 using UnityEngine;
 using System.Collections;
 
-public class Parry : MonoBehaviour
+public class Parry : MonoBehaviour //ESTO ESTA FASE EXPERIMENTAL
 {
-    [Header("Parry")]
-    [SerializeField] private Collider2D _parryUp;
-    [SerializeField] private Collider2D _parryDown;
-    [SerializeField] private Collider2D _parryRight;
-    [SerializeField] private Collider2D _parryLeft;
+    [Header("Attack Points")]
+    [SerializeField] private GameObject _parryUp;
+    [SerializeField] private GameObject _parryDown;
+    [SerializeField] private GameObject _parryLeft;
+    [SerializeField] private GameObject _parryRigth;
 
-    //[SerializeField] private Collider2D parryCollider;
-    [SerializeField] private float parryDuration = 0.3f;
 
-    void Awake()
+    private void Start()
     {
-        DeactivateAllParryColliders(); 
+        DisableAllHitboxes();
+
+    }
+
+    private void Update()
+    {
+        ActiveParry();
     }
 
 
-    public void ActivateParry()
+    void DisableAllHitboxes()
     {
-        StartCoroutine(ParryWindow());
+        _parryUp.SetActive(false);
+        _parryLeft.SetActive(false);
+        _parryDown.SetActive(false);
+        _parryRigth.SetActive(false);
     }
 
-    private void ActiveAllParryColliders()
+
+    public void ActiveParry()
     {
-        _parryUp.enabled = true;
-        _parryDown.enabled = true;
-        _parryRight.enabled = true;
-        _parryLeft.enabled = true;
-    }
-    private void DeactivateAllParryColliders()
-    {
-        _parryUp.enabled = false;
-        _parryDown.enabled = false;
-        _parryRight.enabled = false;
-        _parryLeft.enabled = false;
+
+        if (Input.GetKey(KeyCode.W) && (Input.GetMouseButtonDown(1)))
+        {
+            StartCoroutine(ParryWindow(_parryUp));
+            
+        }
+        else if (Input.GetKey(KeyCode.S) && (Input.GetMouseButtonDown(1)))
+        {
+            StartCoroutine(ParryWindow(_parryDown));
+            
+        }
+        else if (Input.GetKey(KeyCode.A) && (Input.GetMouseButtonDown(1)))
+        {
+            StartCoroutine(ParryWindow(_parryLeft));
+            
+        }
+        else if (Input.GetKey(KeyCode.D) && (Input.GetMouseButtonDown(1)))
+        {
+            StartCoroutine(ParryWindow(_parryRigth));
+            
+        }
+
     }
 
-    private IEnumerator ParryWindow()
+
+    private IEnumerator ParryWindow(GameObject hitbox)
     {
-        //parryCollider.enabled = true;
-        ActiveAllParryColliders();
-        yield return new WaitForSeconds(parryDuration);
-        DeactivateAllParryColliders();
-        //parryCollider.enabled = false;
+        hitbox.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        hitbox.SetActive(false);
     }
 
 }

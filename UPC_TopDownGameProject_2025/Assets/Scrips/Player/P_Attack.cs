@@ -12,7 +12,7 @@ public class P_Attack : MonoBehaviour
     void Update()
     {
         //Disparo
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             if (_shotController != null)
             {
@@ -22,9 +22,9 @@ public class P_Attack : MonoBehaviour
 
 
         // Ataque cuerpo a cuerpo
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)) //Aqui ira la logica de input mas adelante
         {
-            _parry.ActivateParry();
+            //_parry.ActivateParry();
 
             //_meleeController.MeleeAttack();
 
