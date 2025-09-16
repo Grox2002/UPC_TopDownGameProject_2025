@@ -7,7 +7,7 @@ El juego aún no está desarrollado. Este repositorio servirá como base para do
 
 # 📦 Estructura prevista
 -Assets/: Assets del juego (sprites, sonidos, etc.)
--Scripts/: Lógica del juego
+-ProjectSettingd/: Lógica del juego y configuraciones.
 -Docs/: Documentación narrativa y técnica.
 
 # 🛠️ Herramientas previstas
