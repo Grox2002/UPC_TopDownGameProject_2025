@@ -920,6 +920,7 @@ MonoBehaviour:
   _firePoint: {fileID: 3318344619741367942}
   _fireRate: 0.8
   _nextFireTime: 0
+  _animator: {fileID: 4159208147344502251}
 --- !u!95 &6112298267900208491
 Animator:
   serializedVersion: 7
