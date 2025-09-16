@@ -12,7 +12,9 @@ El juego aún no está desarrollado. Este repositorio servirá como base para do
 
 # 🛠️ Herramientas previstas
 - Unity 2025.1
-- GitHub Desktop para control de versione.
+- GitHub Desktop para control de versiones.
 
 # ✨ Objetivo
 -Explorar y definir el concepto inicial de juego para comenzar el desarrollo temprano del mismo.
+-Generar prototipos para explorar posibles mecánicas para el producto final.
+-Compartir y facilitar feedback entre colaboradores y profesores.
