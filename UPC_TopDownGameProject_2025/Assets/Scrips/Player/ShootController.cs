@@ -10,7 +10,15 @@ public class ShootController : MonoBehaviour
     [SerializeField] private float _fireRate = 0.5f;
     [SerializeField] private float _nextFireTime;
 
+    private Animator _animator;
+
     //Metodos
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
         Vector2 playerCurrentDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -25,6 +33,8 @@ public class ShootController : MonoBehaviour
     {
         if (Time.time >= _nextFireTime)
         {
+            _animator.SetTrigger("Shoot");
+
             GameObject arrow = Instantiate(_projectilePrefab, _firePoint.position, _firePoint.rotation);
 
             _nextFireTime = Time.time + _fireRate;

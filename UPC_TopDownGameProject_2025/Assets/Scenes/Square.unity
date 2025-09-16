@@ -1561,8 +1561,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOver: 0
   _playerHealthBar: {fileID: 1157609358066722560}
-  _bossHealthBar: {fileID: 536314188}
   _staminaBar: {fileID: 1157609358066722561}
+  _bossHealthBar: {fileID: 536314188}
+  _bossHUD: {fileID: 0}
   _defeatMenu: {fileID: 1808202970}
   _pauseMenu: {fileID: 920317621}
 --- !u!4 &1067875052
@@ -1859,7 +1860,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.84
+  orthographic size: 1.045
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
