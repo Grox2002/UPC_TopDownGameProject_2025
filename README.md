@@ -14,8 +14,9 @@ El juego esta en fase de prototipado para ensayar mecánicas y estructura de niv
 # 🛠️ Herramientas y packages necesarios
 - Unity 2025.1
 - GitHub Desktop para control de versiones.
-- TXT Mesh Pro Package.
 - Pixel Perfect Package.
+- Cinemachine Package
+- Jet Brain Rider Editor.
 - Unity UI Package.
 - Visual Scripting Package.
 - Universal Renderer Pipeline Camera Package.
