@@ -11,11 +11,17 @@ El juego aún no está desarrollado. Este repositorio servirá como base para do
 - Docs/: Documentación narrativa y técnica.
 - Prototypes: Carpeta que contendrá muestras jugables del juego (builds)
 
-# 🛠️ Herramientas previstas
+# 🛠️ Herramientas y packages necesarios
 - Unity 2025.1
 - GitHub Desktop para control de versiones.
+- TXT Mesh Pro Package.
+- Pixel Perfect Package.
+- Unity UI Package.
+- Visual Scripting Package.
+- Universal Renderer Pipeline Camera Package.
+- Input System Package.
 
 # ✨ Objetivo
--Explorar y definir el concepto inicial de juego para comenzar el desarrollo temprano del mismo.
--Generar prototipos para explorar posibles mecánicas para el producto final.
--Compartir y facilitar feedback entre colaboradores y profesores.
+- Explorar y definir el concepto inicial de juego para comenzar el desarrollo temprano del mismo.
+- Generar prototipos para explorar posibles mecánicas para el producto final.
+- Compartir y facilitar feedback entre colaboradores y profesores.
