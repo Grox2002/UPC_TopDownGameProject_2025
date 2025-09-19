@@ -53,6 +53,9 @@ MonoBehaviour:
   _hitBoxLeft: {fileID: 1050805434153437773}
   _hitBoxRight: {fileID: 2252205417614188312}
   _attackCooldown: 0.5
+  _hitboxDuration: 0.2
+  _playerRb: {fileID: 5981101001048636064}
+  _movementRef: {fileID: 1410353305046772601}
 --- !u!1 &1050805434153437773
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +569,10 @@ MonoBehaviour:
   _runSpeed: 6
   _maxStamina: 3
   _staminaRecoveryRate: 1
+  dashForce: 10
+  dashDuration: 0.2
+  dashCooldown: 1
+  _bow: {fileID: 5151900383496443334}
 --- !u!114 &6839783775394970872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,9 +599,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12968a7308691a741b43cd2ef284b4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shotController: {fileID: 1194050621676783175}
-  _parry: {fileID: 1795530347114886287}
+  _shootController: {fileID: 1194050621676783175}
+  _bow: {fileID: 5151900383496443334}
   _meleeController: {fileID: 2265178945747504917}
+  _parry: {fileID: 1795530347114886287}
+  cursorTexture: {fileID: 2800000, guid: be90fbfcabaf84b41aa32e71fb9576b7, type: 3}
+  _hotspot: {x: 0, y: 0}
 --- !u!212 &5731553615823627984
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -925,7 +935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3318344619741367942}
   - component: {fileID: 1194050621676783175}
-  - component: {fileID: 6112298267900208491}
+  - component: {fileID: 9116577314663230860}
   m_Layer: 0
   m_Name: ShootController
   m_TagString: Untagged
@@ -941,14 +951,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5151900383496443334}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0.01, y: -0.2, z: 0.094144225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3210626213757101977}
   m_Father: {fileID: 8465645638751048947}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
 --- !u!114 &1194050621676783175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,8 +976,8 @@ MonoBehaviour:
   _firePoint: {fileID: 3318344619741367942}
   _fireRate: 0.8
   _nextFireTime: 0
-  _animator: {fileID: 6112298267900208491}
---- !u!95 &6112298267900208491
+  _animator: {fileID: 9116577314663230860}
+--- !u!95 &9116577314663230860
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -1014,13 +1024,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7212610832634420031}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0.517, y: 0.019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3318344619741367942}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
 --- !u!212 &5071768213480060911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1404,7 +1414,8 @@ MonoBehaviour:
   _parryUp: {fileID: 8037897815431616115}
   _parryDown: {fileID: 4454494023025203326}
   _parryLeft: {fileID: 8789332232679824650}
-  _parryRigth: {fileID: 9101486988699007617}
+  _parryRight: {fileID: 9101486988699007617}
+  _parryDuration: 0.2
 --- !u!1 &8992049296907559173
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class P_Movement : MonoBehaviour
 {
@@ -22,6 +23,17 @@ public class P_Movement : MonoBehaviour
     private bool _isExhausted = false;
     private bool _isSprinting = false;
 
+    [Header("Dash")]
+    [SerializeField] private float dashForce = 10f;
+    [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float dashCooldown = 1f;
+    private bool isDashing = false;
+    private float lastDashTime;
+
+
+    [SerializeField] private GameObject _bow;
+
+    
     
     // Métodos
     private void Start()
@@ -36,16 +48,29 @@ public class P_Movement : MonoBehaviour
         ActiveWalkAnimations();
         Run();
         UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
+        _bow.SetActive(_currentDirection == Vector2.zero);
+
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= lastDashTime + dashCooldown)
+        {
+            StartCoroutine(Dash());
+        }
+
     }
 
     private void FixedUpdate()
     {
-        _rb2D.MovePosition(_rb2D.position + _currentDirection * _currentSpeed * Time.fixedDeltaTime);
+        if (!isDashing)
+        {
+            _rb2D.MovePosition(_rb2D.position + _currentDirection * _currentSpeed * Time.fixedDeltaTime);
+        }
+       
+
     }
 
     public void OnMove(InputValue value)
     {
         _currentDirection = value.Get<Vector2>().normalized;
+       
     }
 
     public void OnSprint(InputValue value)
@@ -64,6 +89,14 @@ public class P_Movement : MonoBehaviour
             _animator.SetFloat("UltPosX", _currentDirection.x);
             _animator.SetFloat("UltPosY", _currentDirection.y);
         }
+        else
+        {
+            // Si está quieto, mirar hacia el mouse
+            Vector2 MouseDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+            _animator.SetFloat("UltPosX", MouseDirection.x);
+            _animator.SetFloat("UltPosY", MouseDirection.y);
+        }
+
     }
 
     private void Run()
@@ -92,6 +125,26 @@ public class P_Movement : MonoBehaviour
             }
         }
     }
+
+    private IEnumerator Dash()
+    {
+        isDashing = true;
+        lastDashTime = Time.time;
+
+        //Vector2 dashDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        //if (dashDir == Vector2.zero) dashDir = transform.right; // fallback
+
+        Vector2 dashDir = _currentDirection;
+        if (dashDir == Vector2.zero) dashDir = _lastDirection;
+
+        _rb2D.linearVelocity = dashDir * dashForce;
+
+        yield return new WaitForSeconds(dashDuration);
+
+        _rb2D.linearVelocity = Vector2.zero;
+        isDashing = false;
+    }
+
 }
 /*
     //Metodos

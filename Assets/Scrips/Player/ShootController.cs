@@ -12,23 +12,8 @@ public class ShootController : MonoBehaviour
 
     [SerializeField]  private Animator _animator;
 
+
     //Metodos
-
-    private void Start()
-    {
-        //_animator = GetComponent<Animator>();
-    }
-
-    void Update()
-    {
-        Vector2 playerCurrentDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        if (playerCurrentDir != Vector2.zero)
-        {
-            _firePoint.right = playerCurrentDir; 
-        }
-    }
-
     public void Shoot()
     {
         if (Time.time >= _nextFireTime)
@@ -40,20 +25,17 @@ public class ShootController : MonoBehaviour
             _nextFireTime = Time.time + _fireRate;
         }
    
+    }
 
-        // Esto es experimental - NO FUNCIONA BIEN
-        /*
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0; 
-
-        Vector3 direction = (mousePos - transform.position).normalized;
-        
-        GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+    public void RotateBowTowardsMouse()
+    {
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mouseWorldPos - _firePoint.position).normalized;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        */
+        _firePoint.rotation = Quaternion.Euler(0f, 0f, angle);
     }
+
 }
 
 

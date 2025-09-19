@@ -7,9 +7,51 @@ public class Parry : MonoBehaviour //ESTO ESTA FASE EXPERIMENTAL
     [SerializeField] private GameObject _parryUp;
     [SerializeField] private GameObject _parryDown;
     [SerializeField] private GameObject _parryLeft;
-    [SerializeField] private GameObject _parryRigth;
+    [SerializeField] private GameObject _parryRight;
+
+    [SerializeField] private float _parryDuration = 0.2f;
+    public void ActiveParry()
+    {
+
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 ParryDirection = (mouseWorldPos - transform.position).normalized;
+
+        if (Mathf.Abs(ParryDirection.y) > Mathf.Abs(ParryDirection.x))
+        {
+            if (ParryDirection.y > 0)
+                StartCoroutine(ActivateParryHitbox(_parryUp));
+            else
+                StartCoroutine(ActivateParryHitbox(_parryDown));
+        }
+        else
+        {
+            if (ParryDirection.x > 0)
+                StartCoroutine(ActivateParryHitbox(_parryRight));
+            else
+                StartCoroutine(ActivateParryHitbox(_parryLeft));
+        }
 
 
+    }
+
+    private IEnumerator ActivateParryHitbox(GameObject hitbox)
+    {
+        DisableAllHitboxes();
+        hitbox.SetActive(true);
+        yield return new WaitForSeconds(_parryDuration);
+        hitbox.SetActive(false);
+    }
+
+    private void DisableAllHitboxes()
+    {
+        _parryUp.SetActive(false);
+        _parryDown.SetActive(false);
+        _parryLeft.SetActive(false);
+        _parryRight.SetActive(false);
+    }
+
+
+    /*
     private void Start()
     {
         DisableAllHitboxes();
@@ -64,7 +106,7 @@ public class Parry : MonoBehaviour //ESTO ESTA FASE EXPERIMENTAL
         yield return new WaitForSeconds(0.2f);
         hitbox.SetActive(false);
     }
-
+    */
 }
 
 

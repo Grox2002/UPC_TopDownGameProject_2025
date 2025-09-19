@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 17c7d4b2afe6e954f9d00e569758afd2
+guid: 6e20cd540d4713247a2a5ba2bbd483b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1353927500558483706
-    second: BowAnimation-Sheet_0
+      213: 7764527997391532536
+    second: AttackDummy(Right)-Sheet_0
   - first:
-      213: 3526220279351290619
-    second: BowAnimation-Sheet_1
-  - first:
-      213: 2218547631710705227
-    second: BowAnimation-Sheet_2
-  - first:
-      213: 4809261417125084915
-    second: BowAnimation-Sheet_3
-  - first:
-      213: 4586307209012403756
-    second: BowAnimation-Sheet_4
+      213: 6439511296606414384
+    second: AttackDummy(Right)-Sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BowAnimation-Sheet_0
+      name: AttackDummy(Right)-Sheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 23
-        height: 23
+        x: 7
+        y: 0
+        width: 19
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60f34959c12e53de0800000000000000
-      internalID: -1353927500558483706
+      spriteID: 8f1f81d431521cb60800000000000000
+      internalID: 7764527997391532536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BowAnimation-Sheet_1
+      name: AttackDummy(Right)-Sheet_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 3
-        width: 23
-        height: 23
+        x: 39
+        y: 0
+        width: 19
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,74 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfa238e49a6afe030800000000000000
-      internalID: 3526220279351290619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BowAnimation-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 3
-        width: 23
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b469661115dd9ce10800000000000000
-      internalID: 2218547631710705227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BowAnimation-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 3
-        width: 23
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fe7bbf37cdedb240800000000000000
-      internalID: 4809261417125084915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BowAnimation-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 3
-        width: 23
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2e5ff77b16d5af30800000000000000
-      internalID: 4586307209012403756
+      spriteID: 0362751086dbd5950800000000000000
+      internalID: 6439511296606414384
       vertices: []
       indices: 
       edges: []
@@ -248,11 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BowAnimation-Sheet_0: -1353927500558483706
-      BowAnimation-Sheet_1: 3526220279351290619
-      BowAnimation-Sheet_2: 2218547631710705227
-      BowAnimation-Sheet_3: 4809261417125084915
-      BowAnimation-Sheet_4: 4586307209012403756
+      AttackDummy(Right)-Sheet_0: 7764527997391532536
+      AttackDummy(Right)-Sheet_1: 6439511296606414384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
