@@ -573,6 +573,7 @@ MonoBehaviour:
   dashDuration: 0.2
   dashCooldown: 1
   _bow: {fileID: 5151900383496443334}
+  _pAttack: {fileID: 7446377023665680451}
 --- !u!114 &6839783775394970872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,8 +604,13 @@ MonoBehaviour:
   _bow: {fileID: 5151900383496443334}
   _meleeController: {fileID: 2265178945747504917}
   _parry: {fileID: 1795530347114886287}
+  isMeleeAttacking: 0
   cursorTexture: {fileID: 2800000, guid: be90fbfcabaf84b41aa32e71fb9576b7, type: 3}
   _hotspot: {x: 0, y: 0}
+  _maxStamina: 3
+  _staminaRecoveryRate: 1
+  _meleeStaminaCost: 1
+  _shootStaminaCost: 0.5
 --- !u!212 &5731553615823627984
 SpriteRenderer:
   m_ObjectHideFlags: 0
