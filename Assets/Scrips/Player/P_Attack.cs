@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
+using System;
 
 public class P_Attack : MonoBehaviour
 {
@@ -10,83 +12,99 @@ public class P_Attack : MonoBehaviour
     [SerializeField] private MeleeController _meleeController;
     [SerializeField] private Parry _parry;
 
-    public bool isMeleeAttacking = false;
+    private P_Movement _playerMovement;
+    public Vector2 GetLastDirection() {return _playerMovement._lastDirection;}
+    public bool IsPlayerMoving() => _playerMovement.IsMoving;
 
     public Texture2D cursorTexture;
-
-    [SerializeField] private Vector2 _hotspot = Vector2.zero;
-
-    //estamina
-    [SerializeField] private float _maxStamina = 8f;
-    [SerializeField] private float _staminaRecoveryRate = 1f;
-    [SerializeField] private float _meleeStaminaCost = 1f;
-    [SerializeField] private float _shootStaminaCost = 0.5f;
-
-    private float _currentStamina;
-
-    [SerializeField] private float _staminaRecoveryDelay = 1f; // segundos de espera
-    private float _lastStaminaUseTime;
+    [SerializeField] private Vector2 _cursorPos;
 
 
-
+    //Estamina
+    [SerializeField] private float _maxStamina;
+    [SerializeField] private float _currentStamina;
+    [SerializeField] private float _lastStaminaUseTime;
+    [SerializeField] private float _staminaRegenRate = 1f;
+    [SerializeField] private float _staminaRegenDelay = 2f;
 
     //Metodos
     private void Start()
     {
-        Cursor.SetCursor(cursorTexture, _hotspot, CursorMode.Auto);
+        _cursorPos = new Vector2(16, 16);
+        
+        Cursor.SetCursor(cursorTexture, _cursorPos, CursorMode.Auto);
+
+        _playerMovement = GetComponent<P_Movement>();
+
         _currentStamina = _maxStamina;
     }
 
     private void Update()
     {
-        // Recuperación de estamina
-        if (_currentStamina < _maxStamina && Time.time >= _lastStaminaUseTime + _staminaRecoveryDelay)
+        //Ataque melee
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            _currentStamina += _staminaRecoveryRate * Time.deltaTime;
-            _currentStamina = Mathf.Min(_currentStamina, _maxStamina);
+            StartCoroutine(MeleeAttackRoutine());
         }
 
-        UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
-
-        if (Input.GetKeyDown(KeyCode.E) && !isMeleeAttacking && _currentStamina >= _meleeStaminaCost)
-        {
-            _currentStamina -= _meleeStaminaCost; // Descontar antes
-            _lastStaminaUseTime = Time.time;
-            //UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
-            StartCoroutine(ActivateMeleeAttack());
-        }
-
-        if (Input.GetMouseButtonDown(0) && _bow.activeInHierarchy && !isMeleeAttacking && _currentStamina >= _shootStaminaCost)
-        {
-            _currentStamina -= _shootStaminaCost;
-            _lastStaminaUseTime = Time.time;
-            _shootController.Shoot();
-            //UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
-        }
-
-        if (_bow.activeInHierarchy && !isMeleeAttacking)
-        {
-            _shootController.RotateBowTowardsMouse();
-        }
-
+        //Parry
         if (Input.GetMouseButtonDown(1))
         {
             _parry.ActiveParry();
         }
-       
+
+        //Regeneracion de estamian
+        if (Time.time >= _lastStaminaUseTime + _staminaRegenDelay && _currentStamina < _maxStamina)
+        {
+            _currentStamina += _staminaRegenRate * Time.deltaTime;
+            _currentStamina = Mathf.Min(_currentStamina, _maxStamina);
+            UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
+        }
+
     }
 
-    public IEnumerator ActivateMeleeAttack()
+    public bool ConsumeStamina(float cost)
     {
-        isMeleeAttacking = true;
+        if (_currentStamina >= cost)
+        {
+            _currentStamina -= cost;
+            _lastStaminaUseTime = Time.time;
+            UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
+            return true;
+        }
+        return false;
+    }
 
+    //Ataque a distancia
+    public void OnAttack(InputValue value)
+    {
+        StartCoroutine(RangedAttackRoutine());
+    }
+
+
+    public IEnumerator MeleeAttackRoutine()
+    {
+        _playerMovement.CanMove = false;
+        //_playerMovement.enabled = false;
         _bow.SetActive(false);
         _meleeController.MeleeAttack();
 
         yield return new WaitForSeconds(0.2f);
 
-        _bow.SetActive(true);
-        isMeleeAttacking = false;
+        //_playerMovement.enabled = true;
+        _playerMovement.CanMove = true;
+    }
+
+    public IEnumerator RangedAttackRoutine()
+    {
+        //_bow.SetActive(true);
+        _playerMovement.enabled = false;
+        _shootController.Shoot();
+
+        yield return new WaitForSeconds(0.2f);
+
+        _playerMovement.enabled = true;
+        //_bow.SetActive(false);
     }
 
 }

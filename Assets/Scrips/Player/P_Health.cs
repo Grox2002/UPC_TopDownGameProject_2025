@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class P_Health : MonoBehaviour
@@ -11,6 +10,7 @@ public class P_Health : MonoBehaviour
 
     private SpriteRenderer _sr;
     private bool _isInvulnerable;
+    private P_Attack _playerAttack;
 
     //Metodos
     void Start()
@@ -20,6 +20,8 @@ public class P_Health : MonoBehaviour
         _sr = GetComponent<SpriteRenderer>();
 
         UI_Manager.Instance.UpdatePlayerHealthBar(_currentHealth, _maxHealth);
+
+        _playerAttack = GetComponent<P_Attack>();
     }
 
     public void TakeDamage(int damage)
@@ -46,6 +48,7 @@ public class P_Health : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        _playerAttack.enabled = false;
         //gameObject.SetActive(false);
     }
 

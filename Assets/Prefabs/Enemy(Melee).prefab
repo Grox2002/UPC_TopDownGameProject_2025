@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429d31d9235424148a65bda711817956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 150
+  _maxHealth: 50
   _playerProjectileDamage: 0
 --- !u!114 &1183709279918921352
 MonoBehaviour:
@@ -174,8 +174,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0073575974, y: -0.026152372}
-  m_Radius: 0.4587927
+  m_Offset: {x: -0.0038175583, y: -0.026152372}
+  m_Radius: 0.46233273
 --- !u!50 &9045536468129148393
 Rigidbody2D:
   serializedVersion: 5
@@ -237,5 +237,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0052468777, y: -0.026801944}
-  m_Radius: 0.50605834
+  m_Offset: {x: -0.0068740845, y: -0.026801825}
+  m_Radius: 0.5662861

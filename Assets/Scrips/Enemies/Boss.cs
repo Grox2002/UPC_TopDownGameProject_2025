@@ -54,7 +54,7 @@ public class Boss : MonoBehaviour
         }
         else
         {
-            StopAttack(); //Probablemente esto no sea necesario ya vere de quitarlo si no da problemas.
+            StopAttack(); 
         }
     }
 

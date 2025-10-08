@@ -5,8 +5,6 @@ using System.Collections;
 public class MeleeController : MonoBehaviour 
 {
     //Variables
-    private Animator _animator;
-
     [Header("Attack Points")]
     [SerializeField] private GameObject _hitBoxUp;
     [SerializeField] private GameObject _hitBoxDown;
@@ -14,24 +12,45 @@ public class MeleeController : MonoBehaviour
     [SerializeField] private GameObject _hitBoxRight;
   
     [SerializeField] private float _attackCooldown = 0.5f;
-    [SerializeField] private float _hitboxDuration = 0.2f;
-
+    [SerializeField] private float _hitboxDuration = 0.3f;
+    [SerializeField] private float _hitboxDelay = 0.01f;
+    [SerializeField] private float _meleeStaminaCost = 1f;
 
     private float _nextAttackTime;
+    private P_Attack _playerAttack;
+    private Animator _animator;
 
-    [SerializeField] private Rigidbody2D _playerRb;
-    [SerializeField] private P_Movement _movementRef;
-
-
-    //[SerializeField] private GameObject _bow;
 
     //Metodos
+    private void Start()
+    {
+        DisableAllHitboxes();
+
+        _playerAttack = GetComponentInParent<P_Attack>();
+
+        _animator = GetComponentInParent<Animator>();
+    }
+    
     public void MeleeAttack()
     {
+        if (Time.time == _nextAttackTime) return;
+        if (!_playerAttack.ConsumeStamina(_meleeStaminaCost)) return;
+
         _nextAttackTime = Time.time + _attackCooldown;
 
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 dir = (mouseWorldPos - transform.position).normalized;
+        Vector2 dir;
+
+        if (_playerAttack.IsPlayerMoving())
+        {
+            dir = _playerAttack.GetLastDirection();
+        }
+        else
+        {
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            dir = (mouseWorldPos - transform.position).normalized;
+        }
+
+        MeleeAttackAnimation(dir);
 
         if (Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
         {
@@ -46,17 +65,18 @@ public class MeleeController : MonoBehaviour
                 StartCoroutine(ActivateHitbox(_hitBoxRight));
             else
                 StartCoroutine(ActivateHitbox(_hitBoxLeft));
-        }
-
-        
+        } 
     }
-
+    
     private IEnumerator ActivateHitbox(GameObject hitbox)
     {
-        DisableAllHitboxes();
+
         hitbox.SetActive(true);
+
         yield return new WaitForSeconds(_hitboxDuration);
+
         hitbox.SetActive(false);
+        
     }
 
     private void DisableAllHitboxes()
@@ -67,83 +87,19 @@ public class MeleeController : MonoBehaviour
         _hitBoxRight.SetActive(false);
     }
 
-
-
-    /*
-     //Metodo antiguo
-    private void Start()
+    private void MeleeAttackAnimation(Vector2 dir)
     {
-        DisableAllHitboxes();
+        _animator.SetTrigger("MeleeAttack");
 
-        _animator = GetComponentInParent<Animator>();
-
-        //_playerRb = GetComponentInParent<Rigidbody2D>();
-
-    }
-
-    private void Update()
-    {
-        MeleeAttack();
-
-    }
-
-
-    void DisableAllHitboxes()
-    {
-        _hitBoxUp.SetActive(false);
-        _hitBoxLeft.SetActive(false);
-        _hitBoxDown.SetActive(false);
-        _hitBoxRight.SetActive(false);
-    }
-
-    
-    public void MeleeAttack()
-    {
-        Vector2 dir = _playerRb.linearVelocity;
-
-        if (Time.time < _nextAttackTime) return;
-
-        if (dir.y > 0 && Input.GetKey(KeyCode.Space))
+        if (Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
         {
-            StartCoroutine(ActivateHitboxTemporarily(_hitBoxUp));
-            //_animator.SetInteger("Direction", 0);
-            _animator.SetTrigger("MeleeAttack");
-            _animator.SetInteger("Direction", 0);
+            _animator.SetInteger("Direction", dir.y > 0 ? 0 : 1);
         }
-        else if (dir.y < 0 && Input.GetKey(KeyCode.Space))
+        else
         {
-            StartCoroutine(ActivateHitboxTemporarily(_hitBoxDown));
-            _animator.SetTrigger("MeleeAttack");
-            _animator.SetInteger("Direction", 1);
+            _animator.SetInteger("Direction", dir.x > 0 ? 3 : 2);
         }
-        else if (dir.x < 0 && Input.GetKey(KeyCode.Space))
-        {
-            StartCoroutine(ActivateHitboxTemporarily(_hitBoxLeft));
-            _animator.SetTrigger("MeleeAttack");
-            _animator.SetInteger("Direction", 2);
-        }
-        else if (dir.x > 0 && Input.GetKey(KeyCode.Space))
-        {
-            StartCoroutine(ActivateHitboxTemporarily(_hitBoxRight));
-            _animator.SetTrigger("MeleeAttack");
-            _animator.SetInteger("Direction", 3);
-        }
-
-        _nextAttackTime = Time.time + _attackCooldown;
     }
-
-    
-  
-
-    private IEnumerator ActivateHitboxTemporarily(GameObject hitbox)
-    {
-        hitbox.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        hitbox.SetActive(false);
-    }
-
-    */
-
 }
 
 
