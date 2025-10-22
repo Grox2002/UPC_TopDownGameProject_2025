@@ -35,9 +35,9 @@ public class UI_Manager : MonoBehaviour
     }
 
     //Update player health bar
-    public void UpdatePlayerHealthBar(int current, int max)
+    public void UpdatePlayerHealthBar(float current, float max)
     {
-        _playerHealthBar.fillAmount = (float)current / max;
+        _playerHealthBar.fillAmount = current / max;
     }
 
     //Update boss health bar

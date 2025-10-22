@@ -4,93 +4,75 @@ using UnityEngine;
 
 public class P_Health : MonoBehaviour
 {
-    //Variables
-    [SerializeField] private int _maxHealth = 100;
-    [SerializeField] private int _currentHealth;
+    // ===================== VARIABLES =====================
+    [Header("Salud")]
+    [SerializeField] private float _maxHealth = 100f;
+    [SerializeField] private float _currentHealth;
 
     private SpriteRenderer _sr;
     private bool _isInvulnerable;
     private P_Attack _playerAttack;
 
-    //Metodos
+    // ===================== MÉTODOS =====================
     void Start()
     {
         _currentHealth = _maxHealth;
 
         _sr = GetComponent<SpriteRenderer>();
+        _playerAttack = GetComponent<P_Attack>();
 
         UI_Manager.Instance.UpdatePlayerHealthBar(_currentHealth, _maxHealth);
-
-        _playerAttack = GetComponent<P_Attack>();
     }
 
-    public void TakeDamage(int damage)
+    // Recibe daño (ahora puede ser float)
+    public void TakeDamage(float damage)
     {
+        if (_isInvulnerable && damage > 0f) return;
+
         _currentHealth -= damage;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0f, _maxHealth);
+        UI_Manager.Instance.UpdatePlayerHealthBar(_currentHealth, _maxHealth);
 
-        if (_currentHealth <= 0)
+        if (_currentHealth <= 0f)
         {
-            GameManager.Instance.GameOver();
             Die();
+            GameManager.Instance.GameOver();
         }
-        else
+        else if (damage > 0f)
         {
-            UI_Manager.Instance.UpdatePlayerHealthBar(_currentHealth, _maxHealth);
-
-            if (_isInvulnerable) return;
-
-            _isInvulnerable = true;
             StartCoroutine(DamageEffect());
         }
     }
 
-
     public void Die()
     {
+        if (_playerAttack != null)
+            _playerAttack.enabled = false;
+
         Destroy(gameObject);
-        _playerAttack.enabled = false;
-        //gameObject.SetActive(false);
+        // o: gameObject.SetActive(false);
     }
 
-
-    //Damage effect
-    private IEnumerator DamageEffect()//(int numFlashes = 3, float flashDuration = 0.1f)
+    private IEnumerator DamageEffect()
     {
+        _isInvulnerable = true;
+
         for (int i = 0; i < 6; i++)
         {
             _sr.enabled = false;
             yield return new WaitForSeconds(0.1f);
             _sr.enabled = true;
             yield return new WaitForSeconds(0.1f);
-
-            _isInvulnerable = false;
         }
 
-        /*
-        Color originalColor = _sr.color;
-        float originalAlpha = originalColor.a;
-
-        for (int i = 0; i < numFlashes; i++)
-        {
-            // solo cambio el alpha
-            _sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0.3f);
-            yield return new WaitForSeconds(flashDuration);
-
-            _sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, originalAlpha);
-            yield return new WaitForSeconds(flashDuration);
-        }
-
-  
-        _sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, originalAlpha);
-        */
+        _isInvulnerable = false;
     }
 
-
-    public void Heal(int amount)
+    public void Heal(float amount)
     {
         _currentHealth = Mathf.Min(_currentHealth + amount, _maxHealth);
-        Debug.Log($"Has restaurado: [amount] de vida");
         UI_Manager.Instance.UpdatePlayerHealthBar(_currentHealth, _maxHealth);
+        Debug.Log($"Has restaurado {amount} de vida");
     }
 
 }

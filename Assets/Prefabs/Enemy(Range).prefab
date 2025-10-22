@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6336329918798843953}
   - component: {fileID: -3114818313557423135}
   - component: {fileID: 5813755259415259213}
+  - component: {fileID: 1865074216915862920}
   m_Layer: 3
   m_Name: Enemy(Range)
   m_TagString: Enemy
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 1.5
   _stopDistance: 5
-  _detectionRange: 10
+  _detectionRange: 15
 --- !u!114 &5299132305961415298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b45a80528ee314b922be59438088de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _projectilePrefab: {fileID: 333553271178110972, guid: 402c1fae1d1cf4b49b243c6535cf4017, type: 3}
+  _projectilePrefab: {fileID: 5676044216331608687, guid: 0e2dfdf38fa909441ba563293b89c29d, type: 3}
   _firePoint: {fileID: 6725648622203711164}
   _fireRate: 1
   _attackRange: 5
@@ -129,8 +130,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 8059747102398035680, guid: 540347365304b0242b1d13f5b6a5ca94, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -5117628232467703725, guid: a5fe96310f087bf42bbb1019d7ba47b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -175,17 +176,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0067768097, y: -0.010717869}
+  m_Offset: {x: 0.0026352406, y: 0.5052669}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.59375, y: 1}
     newSize: {x: 0.9375, y: 0.9375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.863595, y: 0.92825603}
+  m_Size: {x: 0.4743266, y: 0.9441695}
   m_EdgeRadius: 0
 --- !u!95 &-3114818313557423135
 Animator:
@@ -197,7 +198,7 @@ Animator:
   m_GameObject: {fileID: 7945755580616898904}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a0c87ac0e9fae974aa5c4e4e7d121d18, type: 2}
+  m_Controller: {fileID: 9100000, guid: 653428aa95a22c54ea258312655358ba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -236,3 +237,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!195 &1865074216915862920
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7945755580616898904}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

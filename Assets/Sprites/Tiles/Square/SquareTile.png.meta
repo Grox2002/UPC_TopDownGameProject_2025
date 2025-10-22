@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a7501414d970af64d8d260a9ace8c012
+guid: 3ea61131dd7fd654a8d4c397f73ce5fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8434390466626142714
-    second: SquareTile_0
+      213: 5917169949375521603
+    second: SquareTile 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
       name: SquareTile_0
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 152
         width: 32
         height: 32
@@ -113,10 +113,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 60ebec3de8603fa80800000000000000
-      internalID: -8434390466626142714
+      spriteID: 47bb444ea08de1146a44069e7ba11773
+      internalID: 604315975
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
       name: SquareTile_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 152
         width: 32
         height: 32
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18709bfd1e4beb74cb783a91001e32a8
-      internalID: 2121078592
+      spriteID: c05cec8524615504f8c696c660ee9e40
+      internalID: -3881293
       vertices: []
       indices: 
       edges: []
@@ -147,6 +147,28 @@ TextureImporter:
       name: SquareTile_2
       rect:
         serializedVersion: 2
+        x: 96
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b7220a2e9726647b1ab337ca12de72
+      internalID: 1157805908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquareTile_3
+      rect:
+        serializedVersion: 2
         x: 128
         y: 152
         width: 32
@@ -159,30 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df1162ad78bec5043a39ecf33aa354ef
-      internalID: -861411710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SquareTile_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 120
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a842dfd065ee2bd4bbfb09994afbbc25
-      internalID: -1009156137
+      spriteID: 349ed273720392f469bb2fd4d1395190
+      internalID: 1120729155
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
       name: SquareTile_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 120
         width: 32
         height: 32
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89550f9bd694c754d85a64801608364a
-      internalID: 731831117
+      spriteID: e0b93009342ebb14cbd4d6501fadabfc
+      internalID: -1620352616
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
       name: SquareTile_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 120
         width: 32
         height: 32
@@ -225,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd73c1f58c40734785996b7f23eabdd
-      internalID: -1212998488
+      spriteID: f2bc115a40fb51d408ea200fddb8aab4
+      internalID: -661984734
       vertices: []
       indices: 
       edges: []
@@ -235,6 +235,50 @@ TextureImporter:
       name: SquareTile_6
       rect:
         serializedVersion: 2
+        x: 64
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dfee48d229885409352ffcc8f9fc99
+      internalID: 1557685206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquareTile_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e03e2ca68fef85478f6ba8d127df2f8
+      internalID: -695862675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquareTile_8
+      rect:
+        serializedVersion: 2
         x: 128
         y: 120
         width: 32
@@ -247,52 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50c7414a328960b45b3ae05094700069
-      internalID: 1528131658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SquareTile_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 88
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ed405c150e41934a845a8b76daad6ec
-      internalID: -375697404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SquareTile_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 88
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de9602198769f3d4db2269a559796a70
-      internalID: 403181205
+      spriteID: b7930aa9046799e4ea359cefe4e7f37d
+      internalID: -697571337
       vertices: []
       indices: 
       edges: []
@@ -301,6 +301,50 @@ TextureImporter:
       name: SquareTile_9
       rect:
         serializedVersion: 2
+        x: 32
+        y: 88
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65d4b068a7919b498b291bc98a79458
+      internalID: 1265524970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquareTile_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 88
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d503751e0bf6adf4da07e7ddcd3fb70b
+      internalID: 214653476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SquareTile_11
+      rect:
+        serializedVersion: 2
         x: 96
         y: 88
         width: 32
@@ -313,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be274459e7acaeb4da278ec5f497c992
-      internalID: -453738113
+      spriteID: ea5e0d217935d1443b25737f72f7581a
+      internalID: -70674111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareTile_10
+      name: SquareTile_12
       rect:
         serializedVersion: 2
         x: 128
@@ -335,14 +379,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb994e1798727e84d9fa53ef2d1ad367
-      internalID: -946308495
+      spriteID: a89abb9d539b63643ab6038d871871c5
+      internalID: 1184492208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareTile_11
+      name: SquareTile_13
       rect:
         serializedVersion: 2
         x: 32
@@ -357,14 +401,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7586b7faed2d9bd48b7f25347befc101
-      internalID: -554633278
+      spriteID: a5899b6c63201b641b712068d042e4d1
+      internalID: -1807766740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareTile_12
+      name: SquareTile_14
       rect:
         serializedVersion: 2
         x: 64
@@ -379,14 +423,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b71b380a45c0814b884a11a5d9ebb7c
-      internalID: 1979424753
+      spriteID: 7142f9771cf1513438ab7bf2c67ea432
+      internalID: 254008705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareTile_13
+      name: SquareTile_15
       rect:
         serializedVersion: 2
         x: 96
@@ -401,14 +445,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c200fe63137650a4d9b7c53c4931f51d
-      internalID: 1637196976
+      spriteID: 3074c9c8f01074d428e3ac491317a5cd
+      internalID: 63652531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareTile_14
+      name: SquareTile_16
       rect:
         serializedVersion: 2
         x: 128
@@ -423,8 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c9e293f66f72445bda2488612f2e1b
-      internalID: -701057139
+      spriteID: 5610bbeac2d95584ab7e066809c82931
+      internalID: 1597468391
       vertices: []
       indices: 
       edges: []
@@ -433,7 +477,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f0fe9f26f8345014dad4b01d7304e181
+    spriteID: bc098535b948a0b47ace7685becc6428
     internalID: 0
     vertices: []
     indices: 
@@ -445,21 +489,23 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":16.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SquareTile_0: -8434390466626142714
-      SquareTile_1: 2121078592
-      SquareTile_10: -946308495
-      SquareTile_11: -554633278
-      SquareTile_12: 1979424753
-      SquareTile_13: 1637196976
-      SquareTile_14: -701057139
-      SquareTile_2: -861411710
-      SquareTile_3: -1009156137
-      SquareTile_4: 731831117
-      SquareTile_5: -1212998488
-      SquareTile_6: 1528131658
-      SquareTile_7: -375697404
-      SquareTile_8: 403181205
-      SquareTile_9: -453738113
+      SquareTile_0: 604315975
+      SquareTile_1: -3881293
+      SquareTile_10: 214653476
+      SquareTile_11: -70674111
+      SquareTile_12: 1184492208
+      SquareTile_13: -1807766740
+      SquareTile_14: 254008705
+      SquareTile_15: 63652531
+      SquareTile_16: 1597468391
+      SquareTile_2: 1157805908
+      SquareTile_3: 1120729155
+      SquareTile_4: -1620352616
+      SquareTile_5: -661984734
+      SquareTile_6: 1557685206
+      SquareTile_7: -695862675
+      SquareTile_8: -697571337
+      SquareTile_9: 1265524970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

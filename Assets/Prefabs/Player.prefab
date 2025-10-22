@@ -55,7 +55,6 @@ MonoBehaviour:
   _hitBoxRight: {fileID: 2252205417614188312}
   _attackCooldown: 0.5
   _hitboxDuration: 0.2
-  _hitboxDelay: 0.01
   _meleeStaminaCost: 1
 --- !u!1 &1050805434153437773
 GameObject:
@@ -75,7 +74,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6859680414944796755
 Transform:
   m_ObjectHideFlags: 0
@@ -226,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &390361608599603304
 Transform:
   m_ObjectHideFlags: 0
@@ -377,7 +376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6207192505181294953
 Transform:
   m_ObjectHideFlags: 0
@@ -567,6 +566,7 @@ MonoBehaviour:
   _walkingSpeed: 3
   _currentDirection: {x: 0, y: 0}
   _lastDirection: {x: 0, y: 0}
+  canMove: 1
   dashForce: 10
   dashDuration: 0.2
   dashCooldown: 1
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectilePrefab: {fileID: 1688028919210730914, guid: 69214a55df22d6442b05d22b9f036a52, type: 3}
   _firePoint: {fileID: 3318344619741367942}
-  _fireRate: 0.8
+  _fireRate: 0.5
   _nextFireTime: 0
   _animator: {fileID: 9116577314663230860}
   _shootStaminaCost: 1
@@ -1013,6 +1013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3210626213757101977}
   - component: {fileID: 5071768213480060911}
+  - component: {fileID: 4204462384891491492}
   m_Layer: 0
   m_Name: BowSprite
   m_TagString: Untagged
@@ -1081,7 +1082,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1353927500558483706, guid: 17c7d4b2afe6e954f9d00e569758afd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1093,6 +1094,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4204462384891491492
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212610832634420031}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d398806fc7007743bce5ae63b9cc402, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8037897815431616115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4432933048324139581
 Transform:
   m_ObjectHideFlags: 0

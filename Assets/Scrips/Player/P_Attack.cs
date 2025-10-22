@@ -19,6 +19,8 @@ public class P_Attack : MonoBehaviour
     public Texture2D cursorTexture;
     [SerializeField] private Vector2 _cursorPos;
 
+    private Animator _animator;
+
 
     //Estamina
     [SerializeField] private float _maxStamina;
@@ -37,6 +39,8 @@ public class P_Attack : MonoBehaviour
         _playerMovement = GetComponent<P_Movement>();
 
         _currentStamina = _maxStamina;
+
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -60,7 +64,6 @@ public class P_Attack : MonoBehaviour
             _currentStamina = Mathf.Min(_currentStamina, _maxStamina);
             UI_Manager.Instance.UpdateStaminaBar(_currentStamina, _maxStamina);
         }
-
     }
 
     public bool ConsumeStamina(float cost)
@@ -78,35 +81,42 @@ public class P_Attack : MonoBehaviour
     //Ataque a distancia
     public void OnAttack(InputValue value)
     {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        Vector2 attackDir = (mousePos - (Vector2)transform.position).normalized;
+
+        // Actualizar animación hacia la dirección del ataque
+        _animator.SetFloat("UltPosX", attackDir.x);
+        _animator.SetFloat("UltPosY", attackDir.y);
+
         StartCoroutine(RangedAttackRoutine());
     }
 
 
     public IEnumerator MeleeAttackRoutine()
     {
-        _playerMovement.CanMove = false;
-        //_playerMovement.enabled = false;
+        _playerMovement.canMove = false;
+
         _bow.SetActive(false);
+
         _meleeController.MeleeAttack();
 
         yield return new WaitForSeconds(0.2f);
 
-        //_playerMovement.enabled = true;
-        _playerMovement.CanMove = true;
+        _playerMovement.canMove = true;
     }
 
     public IEnumerator RangedAttackRoutine()
     {
-        //_bow.SetActive(true);
-        _playerMovement.enabled = false;
+        _playerMovement.canMove = false;
+
         _shootController.Shoot();
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
 
-        _playerMovement.enabled = true;
-        //_bow.SetActive(false);
+        _playerMovement.canMove = true;
+
+   
     }
-
 }
 
 

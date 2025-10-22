@@ -39,7 +39,7 @@ public class Arrow : MonoBehaviour
         }
         if (other.CompareTag("Boss"))
         {
-            other.GetComponent<Boss>().TakeDamage(_damage);
+            other.GetComponent<SeraphBoss>().TakeDamage(_damage);
             Destroy(gameObject);
         }
         if (other.CompareTag("Wall"))

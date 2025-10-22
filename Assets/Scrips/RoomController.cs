@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RoomController : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> puertas; // Asigná tus puertas aquí
+    [SerializeField] private List<GameObject> puertas; 
 
-    [SerializeField] private RoomSpawner spawner; // Referencia a tu spawner
+    [SerializeField] private RoomSpawner spawner; 
 
     private bool _playerInside;
     private bool _fightStarted;

@@ -1,53 +1,92 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class E_Movement : MonoBehaviour
 {
-    //Variables
+    [Header("Configuración de movimiento")]
     [SerializeField] private float _speed = 3f;
-    [SerializeField] private float _stopDistance = 1f;
-    [SerializeField] private float _detectionRange;
+    [SerializeField] private float _stopDistance = 1f;    
+    [SerializeField] private float _detectionRange = 5f; 
 
-    private SpriteRenderer _sr;
+    private NavMeshAgent _agent;
     private Transform _player;
+    private Animator _animator;
 
-    //Metodos
+    private Vector2 _currentDirection; 
+    private Vector2 _lastDirection;    
+
     void Start()
     {
-        _sr = GetComponent<SpriteRenderer>();
+        _agent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        _animator = GetComponent<Animator>();
+
+        _agent.updateRotation = false;
+        _agent.updateUpAxis = false;
+        _agent.speed = _speed;
     }
 
     void Update()
     {
-        if (_player != null)
+        if (_player != null && _agent.isOnNavMesh)
         {
-            EnemyMovement();
+            HandleMovement();
+            UpdateAnimations();
         }
-
     }
 
-    void EnemyMovement()
+    private void HandleMovement()
     {
-        float playerDistance = Vector2.Distance(_player.position, transform.position);
+        float distance = Vector2.Distance(_player.position, transform.position);
 
-        if (playerDistance <= _detectionRange)
+        if (distance <= _detectionRange)
         {
-            Vector2 direction = _player.position - transform.position;
-
-            if (playerDistance > _stopDistance)
+            if (distance > _stopDistance)
             {
-                direction.Normalize();
-                transform.position += (Vector3)(direction * _speed * Time.deltaTime);
+                // Caminar hacia el jugador
+                _agent.SetDestination(_player.position);
             }
-
-            _sr.flipX = _player.position.x > transform.position.x;
+            else
+            {
+                // Dentro del rango de ataque: detenerse
+                _agent.ResetPath();
+            }
         }
-
+        else
+        {
+            _agent.ResetPath(); // Fuera del rango de detección
+        }
     }
 
-    void OnDrawGizmosSelected()
+    private void UpdateAnimations()
+    {
+        Vector2 toPlayer = (_player.position - transform.position).normalized;
+        float distance = Vector2.Distance(_player.position, transform.position);
+
+        bool isMoving = distance > _stopDistance && distance <= _detectionRange;
+
+        // Mantiene la dirección hacia el jugador (siempre)
+        _currentDirection = toPlayer;
+        if (_currentDirection.magnitude > 0.01f)
+            _lastDirection = _currentDirection;
+
+        // Actualizar parámetros del Animator
+        _animator.SetFloat("MovX", _currentDirection.x);
+        _animator.SetFloat("MovY", _currentDirection.y);
+        _animator.SetFloat("UltPosX", _lastDirection.x);
+        _animator.SetFloat("UltPosY", _lastDirection.y);
+
+        // Nuevo: controla si debe reproducir idle o walk
+        _animator.SetBool("IsMoving", isMoving);
+    }
+
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, _detectionRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _stopDistance);
     }
+
 }

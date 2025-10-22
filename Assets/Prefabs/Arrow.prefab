@@ -47,9 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b0c3a91de2f234dbbd632bd0256386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  damage: 50
-  lifeTime: 5
+  _speed: 10
+  _damage: 20
 --- !u!58 &4999696052006940077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -191,7 +190,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -4346244404228752641, guid: 6ec5bf46f960e7d41b66153b37ed232a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

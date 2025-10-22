@@ -16,7 +16,6 @@ public class ShootController : MonoBehaviour
     
     private P_Attack _playerAttack;
 
-
     //Metodos--------------------------------------------------------------------------------------------------------------------------
     private void Start()
     {
@@ -25,16 +24,20 @@ public class ShootController : MonoBehaviour
         _playerAttack = GetComponentInParent<P_Attack>();
 
         _animator = GetComponent<Animator>();
+
     }
 
     private void Update()
     {
+        if (PlayerControlLock.AttackLocked) return;
         if (!gameObject.activeInHierarchy) return;
         RotateBowTowardsMouse();
     }
     
     public void Shoot()
     {
+        if (PlayerControlLock.AttackLocked) return;
+
         // Esto evita quel le disparo se ejecute si está en cooldown o sin stamina
         if (Time.time < _nextFireTime || !_playerAttack.ConsumeStamina(_shootStaminaCost))
             return;
@@ -53,7 +56,7 @@ public class ShootController : MonoBehaviour
 
     }
     
-    //Esto como dice el metodo rota el arco hacia donde esta el mouse :v
+    //Esto rota el arco hacia donde esta el mouse :v
     public void RotateBowTowardsMouse()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

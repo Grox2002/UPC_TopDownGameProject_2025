@@ -13,7 +13,6 @@ public class MeleeController : MonoBehaviour
   
     [SerializeField] private float _attackCooldown = 0.5f;
     [SerializeField] private float _hitboxDuration = 0.3f;
-    [SerializeField] private float _hitboxDelay = 0.01f;
     [SerializeField] private float _meleeStaminaCost = 1f;
 
     private float _nextAttackTime;
@@ -33,7 +32,7 @@ public class MeleeController : MonoBehaviour
     
     public void MeleeAttack()
     {
-        if (Time.time == _nextAttackTime) return;
+        if (Time.time < _nextAttackTime) return;
         if (!_playerAttack.ConsumeStamina(_meleeStaminaCost)) return;
 
         _nextAttackTime = Time.time + _attackCooldown;
@@ -46,8 +45,8 @@ public class MeleeController : MonoBehaviour
         }
         else
         {
-            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            dir = (mouseWorldPos - transform.position).normalized;
+            Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            dir = (mouseWorldPos - (Vector2)transform.position).normalized;
         }
 
         MeleeAttackAnimation(dir);
