@@ -3,17 +3,17 @@ using UnityEngine.AI;
 
 public class E_Movement : MonoBehaviour
 {
-    [Header("Configuración de movimiento")]
+    [Header("Movimiento")]
     [SerializeField] private float _speed = 3f;
-    [SerializeField] private float _stopDistance = 1f;    
-    [SerializeField] private float _detectionRange = 5f; 
+    [SerializeField] private float _stopDistance = 1f;
+    [SerializeField] private float _detectionRange = 5f;
+
+    [Header("Puntos de referencia")]
+    [SerializeField] private Transform _stopOrigin;
 
     private NavMeshAgent _agent;
     private Transform _player;
     private Animator _animator;
-
-    private Vector2 _currentDirection; 
-    private Vector2 _lastDirection;    
 
     void Start()
     {
@@ -24,69 +24,66 @@ public class E_Movement : MonoBehaviour
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
         _agent.speed = _speed;
+        _agent.stoppingDistance = _stopDistance;
+        _agent.autoBraking = false;
     }
 
     void Update()
     {
-        if (_player != null && _agent.isOnNavMesh)
-        {
-            HandleMovement();
-            UpdateAnimations();
-        }
-    }
+        if (_player == null) return;
 
-    private void HandleMovement()
-    {
-        float distance = Vector2.Distance(_player.position, transform.position);
+        // Si no se asigna un punto, se usa el propio transform
+        Vector3 stopOrigin = _stopOrigin != null ? _stopOrigin.position : transform.position;
+        float distance = Vector2.Distance(stopOrigin, _player.position);
+        Vector2 direction = (_player.position - stopOrigin).normalized;
 
         if (distance <= _detectionRange)
         {
             if (distance > _stopDistance)
             {
-                // Caminar hacia el jugador
+                _agent.isStopped = false;
                 _agent.SetDestination(_player.position);
             }
             else
             {
-                // Dentro del rango de ataque: detenerse
+                _agent.isStopped = true;
                 _agent.ResetPath();
+                _agent.velocity = Vector3.zero;
             }
+
+            _animator.SetFloat("UltPosX", direction.x);
+            _animator.SetFloat("UltPosY", direction.y);
         }
         else
         {
-            _agent.ResetPath(); // Fuera del rango de detección
+            _agent.isStopped = true;
+            _agent.ResetPath();
+            _agent.velocity = Vector3.zero;
         }
-    }
 
-    private void UpdateAnimations()
-    {
-        Vector2 toPlayer = (_player.position - transform.position).normalized;
-        float distance = Vector2.Distance(_player.position, transform.position);
+        float speed = _agent.velocity.magnitude;
+        _animator.SetFloat("Speed", speed);
 
-        bool isMoving = distance > _stopDistance && distance <= _detectionRange;
-
-        // Mantiene la dirección hacia el jugador (siempre)
-        _currentDirection = toPlayer;
-        if (_currentDirection.magnitude > 0.01f)
-            _lastDirection = _currentDirection;
-
-        // Actualizar parámetros del Animator
-        _animator.SetFloat("MovX", _currentDirection.x);
-        _animator.SetFloat("MovY", _currentDirection.y);
-        _animator.SetFloat("UltPosX", _lastDirection.x);
-        _animator.SetFloat("UltPosY", _lastDirection.y);
-
-        // Nuevo: controla si debe reproducir idle o walk
-        _animator.SetBool("IsMoving", isMoving);
+        if (speed > 0.01f)
+        {
+            _animator.SetFloat("MovX", direction.x);
+            _animator.SetFloat("MovY", direction.y);
+        }
+        else
+        {
+            _animator.SetFloat("MovX", 0);
+            _animator.SetFloat("MovY", 0);
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.cyan;
+        Vector3 stopOrigin = _stopOrigin != null ? _stopOrigin.position : transform.position;
+
+        Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, _detectionRange);
 
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _stopDistance);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(stopOrigin, _stopDistance);
     }
-
 }

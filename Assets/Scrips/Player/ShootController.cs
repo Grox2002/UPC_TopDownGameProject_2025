@@ -6,6 +6,7 @@ public class ShootController : MonoBehaviour
 {
     //Variables
     [SerializeField] private GameObject _projectilePrefab;
+    [SerializeField] private Transform _bowTransform;
     [SerializeField] private Transform _firePoint;
     [SerializeField] private float _fireRate = 0.5f;
     [SerializeField] private float _nextFireTime;
@@ -23,35 +24,29 @@ public class ShootController : MonoBehaviour
 
         _playerAttack = GetComponentInParent<P_Attack>();
 
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
 
     }
 
     private void Update()
     {
-        if (PlayerControlLock.AttackLocked) return;
         if (!gameObject.activeInHierarchy) return;
         RotateBowTowardsMouse();
     }
     
     public void Shoot()
     {
-        if (PlayerControlLock.AttackLocked) return;
-
         // Esto evita quel le disparo se ejecute si está en cooldown o sin stamina
         if (Time.time < _nextFireTime || !_playerAttack.ConsumeStamina(_shootStaminaCost))
             return;
 
         gameObject.SetActive(true);
-        _animator.SetTrigger("Shoot"); //F no consigo que esto funcione.
+        _animator.SetTrigger("Shoot");
 
-        // Calcula dirección y crea proyectil
-        Vector2 direction = _firePoint.right;
         GameObject arrow = Instantiate(_projectilePrefab, _firePoint.position, _firePoint.rotation);
 
-        arrow.GetComponent<Arrow>()?.SetDirection(direction);
+        arrow.GetComponent<Arrow>()?.SetDirection(_firePoint.right);
 
-        // Actualiza cooldown
         _nextFireTime = Time.time + _fireRate;
 
     }
@@ -60,10 +55,10 @@ public class ShootController : MonoBehaviour
     public void RotateBowTowardsMouse()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 dir = (mousePos - _firePoint.position).normalized;
+        Vector2 dir = (mousePos - _bowTransform.position).normalized;
 
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        _firePoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        _bowTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
      
     }
 }

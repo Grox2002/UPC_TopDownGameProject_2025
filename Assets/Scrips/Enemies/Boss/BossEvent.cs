@@ -36,7 +36,7 @@ public class BossEvent : MonoBehaviour
 
     private IEnumerator BossIntroSequence()
     {
-        PlayerControlLock.LockAll();
+        
         //p_Attack.enabled = false;
         //p_Movement.enabled = false;
 
@@ -54,6 +54,6 @@ public class BossEvent : MonoBehaviour
 
         _boss.StartBattle();
 
-        PlayerControlLock.UnlockAll();
+        
     }
 }

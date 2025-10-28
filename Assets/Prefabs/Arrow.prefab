@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
-  _damage: 20
+  _damage: 10
+  arrowSound: {fileID: 8300000, guid: 76b8b45b20cb17444b58428222fcc4e9, type: 3}
+  volume: 1
 --- !u!58 &4999696052006940077
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -8,12 +8,26 @@ public class E_Health : MonoBehaviour
     [SerializeField] private int _playerProjectileDamage;
 
     private SpriteRenderer _spriteRenderer;
-   
+    private Animator _animator;
+
+    private E_Movement _enemyMovement;
+
+    [SerializeField]  private Collider2D _enemyCollider;
+
+    [Header("Sonido")]
+    [SerializeField] private AudioClip _damagedSound;
+    [SerializeField] private AudioClip _deathSound;
+    [SerializeField] private float _volume = 0.8f;
+
+    private AudioSource _audioSource;
 
     //Metodos
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
+        _enemyMovement = GetComponent<E_Movement>();
+        _audioSource = GetComponent < AudioSource>();
     }
 
     public void TakeDamage(float damage)
@@ -22,7 +36,9 @@ public class E_Health : MonoBehaviour
 
         if(_maxHealth <= 0)
         {
+            StopAllCoroutines();
             Die();
+            //Die();
         }
         else
         {
@@ -30,9 +46,22 @@ public class E_Health : MonoBehaviour
         }
     }
 
-    public void Die()
+    public void DestroyEnemy()
     {
+
         Destroy(gameObject);
+    }
+
+    private void Die()
+    {
+        _animator.SetBool("IsDeath", true);
+
+        _enemyCollider.enabled = false;
+
+        _enemyMovement.enabled = false;
+
+        _audioSource.PlayOneShot(_deathSound, _volume);
+
     }
 
     public void StartDamageEffect()
@@ -42,6 +71,8 @@ public class E_Health : MonoBehaviour
 
     private IEnumerator DamageEffect()
     {
+        _audioSource.PlayOneShot(_damagedSound, _volume);
+        //AudioSource.PlayClipAtPoint(_damagedSound, transform.position, _volume);
 
         for (int i = 0; i < 6; i++)
         {
@@ -52,7 +83,10 @@ public class E_Health : MonoBehaviour
         }
 
     }
-
+    public void EndDamageEffect()
+    {
+        StopCoroutine(DamageEffect());
+    }
 
     //bala reflejada
     private void OnTriggerEnter2D(Collider2D other)

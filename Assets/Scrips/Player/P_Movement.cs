@@ -1,6 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
+using UnityEngine.Rendering;
 
 public class P_Movement : MonoBehaviour
 {
@@ -9,25 +10,29 @@ public class P_Movement : MonoBehaviour
     [SerializeField] private float _walkingSpeed = 3f;
     [SerializeField] private Vector2 _currentDirection;
     public Vector2 _lastDirection;
-    private Rigidbody2D _rb2D;
-    private Animator _animator;
     public bool IsMoving => _currentDirection != Vector2.zero;
     public bool canMove = true;
 
+    private Rigidbody2D _rb2D;
+    private Animator _animator;
+
     private InputAction moveAction;
     private PlayerInput playerInput;
-    public Vector2 LookDirection { get; private set; }
 
     [Header("Dash")]
     [SerializeField] private float dashForce = 10f;
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashCooldown = 1f;
+
     private bool isDashing = false;
     private float lastDashTime;
     
-    [SerializeField] private GameObject _bow;
-    [SerializeField] private P_Attack _playerAttack;
 
+    [Header("Sonido")]
+    [SerializeField] private AudioClip _dashSound; 
+    [SerializeField] private float _volume = 0.8f;
+
+    
 
 
     // Métodos
@@ -59,6 +64,7 @@ public class P_Movement : MonoBehaviour
 
         if (canMove && !isDashing)
         {
+        
             _rb2D.linearVelocity = moveInput * _walkingSpeed;
             ActiveWalkAnimations();
         }
@@ -67,7 +73,7 @@ public class P_Movement : MonoBehaviour
             _rb2D.linearVelocity = Vector2.zero;
         }
 
-        
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -120,6 +126,8 @@ public class P_Movement : MonoBehaviour
     
     private IEnumerator Dash()
     {
+        AudioSource.PlayClipAtPoint(_dashSound, transform.position, _volume);
+
         isDashing = true;
         lastDashTime = Time.time;
 

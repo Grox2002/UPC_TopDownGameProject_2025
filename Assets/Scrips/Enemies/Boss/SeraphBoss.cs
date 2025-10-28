@@ -10,6 +10,7 @@ public class SeraphBoss : MonoBehaviour
     [SerializeField] private int _maxHealth = 1000;
     private int _currentHealth;
     private int _currentPhase = 1;
+    private bool _isInvulnerable = false;
 
     [Header("Referencias")]
     [SerializeField] private Transform player;
@@ -18,12 +19,12 @@ public class SeraphBoss : MonoBehaviour
 
     [Header("Ataque: Suelo Sagrado")]
     public GameObject sacredZonePrefab;
-    public Transform[] spawnPoints;       
+    public Transform[] spawnPoints;
     public int zonesPerWave = 3;
 
     [SerializeField] private float attackInterval = 5f;
 
-    [Header("Ataque: Catigo divino")]
+    [Header("Ataque: Castigo Divino")]
     public GameObject sacredLightningPrefab;
 
     [Header("Ataque: Embestida")]
@@ -35,12 +36,10 @@ public class SeraphBoss : MonoBehaviour
     [SerializeField] private float retreatSpeed = 5f;
     [SerializeField] private float returnSpeed = 4f;
     [SerializeField] private float pauseBeforeDash = 0.4f;
-    [SerializeField] private float damage = 40f;
     public GameObject dashDamager;
     public LayerMask playerLayer;
     private bool _isAttacking = false;
     private Vector2 _initialPosition;
-
 
     [Header("Ataque: Absorcion")]
     public GameObject orbPrefab;
@@ -55,21 +54,18 @@ public class SeraphBoss : MonoBehaviour
     [SerializeField] private float floatSpeed = 2f;
     private float _floatOffset;
 
+    private bool _isTransitioning = false;
+
     //===============================METODOS====================================================//
 
     private void Start()
     {
         _currentHealth = _maxHealth;
-
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-
         UI_Manager.Instance.UpdateBossHealthBar(_currentHealth, _maxHealth);
-
         _floatOffset = Random.Range(0f, Mathf.PI * 2f);
         StartCoroutine(FloatEffect());
-
         _initialPosition = transform.position;
-
         StartBattle();
     }
 
@@ -78,19 +74,23 @@ public class SeraphBoss : MonoBehaviour
         if (player != null && !_canFight)
         {
             _canFight = true;
-            StartCoroutine(PatronAtaque());
+            _currentAttackRoutine = StartCoroutine(PatronAtaque());
         }
     }
 
+    private Coroutine _currentAttackRoutine;
     private IEnumerator PatronAtaque()
     {
-        List<IEnumerator> availableAttacks = new List<IEnumerator>();
-
         while (_currentHealth > 0)
         {
+            // Espera entre ataques
             yield return new WaitForSeconds(attackInterval);
 
-            // ===== Determina la fase actual ===== //
+            // ===== Esperar mientras dure la transición =====
+            while (_isTransitioning)
+                yield return null;
+
+            // ===== Determinar fase actual =====
             int newPhase;
             if (_currentHealth > _maxHealth * 0.66f)
                 newPhase = 1;
@@ -99,51 +99,49 @@ public class SeraphBoss : MonoBehaviour
             else
                 newPhase = 3;
 
-            // ===== Cada cambio de fase, activa absorción ===== //
+            // ===== Cambiar de fase si es necesario =====
             if (newPhase != _currentPhase)
             {
-                Debug.Log($"Cambiando a fase {newPhase}, ejecutando absorción...");
-                _currentPhase = newPhase;
-                
-                yield return StartCoroutine(AbsorptionAttack(_currentPhase));
-
-                yield return new WaitForSeconds(1f);
+                StartCoroutine(PhaseTransition(newPhase));
+                continue; // espera en la siguiente iteración hasta que _isTransitioning sea false
             }
 
-            // ===== Ataques según la fase ===== //
-            availableAttacks.Clear();
-
-            if (_currentPhase == 1) //Fase 1
+            // ===== Definir ataques disponibles según fase =====
+            List<System.Func<IEnumerator>> availableAttacks = new List<System.Func<IEnumerator>>();
+            if (_currentPhase == 1)
+                availableAttacks.Add(() => CelestialCharge());
+            else if (_currentPhase == 2)
             {
-                availableAttacks.Add(CelestialCharge());
+                availableAttacks.Add(() => CelestialCharge());
+                availableAttacks.Add(() => SpawnSacredZonesCoroutine());
             }
-            else if (_currentPhase == 2) // Fase 2
+            else
             {
-                availableAttacks.Add(CelestialCharge());
-                availableAttacks.Add(SpawnSacredZonesCoroutine());
-            }
-            else // Fase 3
-            {
-                availableAttacks.Add(CelestialCharge());
-                availableAttacks.Add(SpawnSacredZonesCoroutine());
-                availableAttacks.Add(DivinePunishmentCoroutine());
+                availableAttacks.Add(() => DivinePunishmentCoroutine());
+                availableAttacks.Add(() => CelestialCharge());
+                availableAttacks.Add(() => SpawnSacredZonesCoroutine());
             }
 
             // ===== Elegir ataque aleatorio =====
-            IEnumerator selectedAttack = availableAttacks[Random.Range(0, availableAttacks.Count)];
-            StartCoroutine(selectedAttack);
+            var selectedAttackFunc = availableAttacks[Random.Range(0, availableAttacks.Count)];
+            _currentAttackRoutine = StartCoroutine(selectedAttackFunc());
+            yield return _currentAttackRoutine;
+            _currentAttackRoutine = null;
         }
     }
 
     public void TakeDamage(int damage)
     {
+        if (_isInvulnerable) return; // Invulnerable durante transición de fase
+
         _currentHealth -= damage;
         UI_Manager.Instance.UpdateBossHealthBar(_currentHealth, _maxHealth);
 
         if (_currentHealth <= 0)
         {
             StopAllCoroutines();
-            Destroy(gameObject);
+            UI_Manager.Instance.HideBossHealthBar();
+            Die();
             GameManager.Instance.BossDefeated();
         }
         else
@@ -152,6 +150,26 @@ public class SeraphBoss : MonoBehaviour
         }
     }
 
+    private void Die()
+    {
+        //UI_Manager.Instance.HideBossHealthBar();
+        Destroy(gameObject);
+        //GameManager.Instance.BossDefeated();
+    }
+    private IEnumerator DamageEffect()
+    {
+        Color originalColor = _spriteRenderer.color;
+        Color damageColor = new Color(1f, 1f, 1f, 0.5f); // rojo transparente
+
+        for (int i = 0; i < 2; i++)
+        {
+            _spriteRenderer.color = damageColor;
+            yield return new WaitForSeconds(0.1f);
+            _spriteRenderer.color = originalColor;
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+    /*
     private IEnumerator DamageEffect()
     {
         for (int i = 0; i < 6; i++)
@@ -161,45 +179,72 @@ public class SeraphBoss : MonoBehaviour
         }
         _spriteRenderer.enabled = true;
     }
+    */
+    private IEnumerator PhaseTransition(int newPhase)
+    {
+        _isTransitioning = true;
+        _isInvulnerable = true;
+        _spriteRenderer.color = Color.yellow;
 
+        Debug.Log($"Cambiando a fase {newPhase}...");
 
+        // Lanza ataque de absorción (bloquea otros ataques automáticamente)
+        yield return StartCoroutine(AbsorptionAttack(newPhase));
+
+        // Espera visual / transición
+        yield return new WaitForSeconds(1f);
+
+        _spriteRenderer.color = Color.white;
+        _isInvulnerable = false;
+        _isTransitioning = false;
+
+        _currentPhase = newPhase;
+        Debug.Log($"Fase {newPhase} completada");
+    }
 
     private IEnumerator SpawnSacredZonesCoroutine()
     {
         int totalZones = Mathf.Min(zonesPerWave, spawnPoints.Length);
+        List<GameObject> activeZones = new List<GameObject>();
 
+        // Instancia las zonas
         for (int i = 0; i < totalZones; i++)
         {
             Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            Instantiate(sacredZonePrefab, spawnPoint.position, Quaternion.identity);
+            GameObject zone = Instantiate(sacredZonePrefab, spawnPoint.position, Quaternion.identity);
+            activeZones.Add(zone);
         }
 
-        yield return new WaitForSeconds(0.2f);
+        // Duración del ataque
+        float zoneDuration = 4f;
+        yield return new WaitForSeconds(zoneDuration);
+
+        // Limpieza de zonas
+        foreach (GameObject zone in activeZones)
+        {
+            if (zone != null)
+                Destroy(zone);
+        }
+
+        yield return null;
     }
 
     private IEnumerator DivinePunishmentCoroutine()
     {
         if (player == null) yield break;
-       
         yield return new WaitForSeconds(0.5f);
-
-        GameObject lightning = Instantiate(sacredLightningPrefab, player.position, Quaternion.identity);
-
-        //DivinePunishmentAttack slf = lightning.GetComponent<DivinePunishmentAttack>();
-
+        Instantiate(sacredLightningPrefab, player.position, Quaternion.identity);
         yield return null;
     }
 
     public IEnumerator CelestialCharge()
     {
-
         if (player == null || _isAttacking) yield break;
         _isAttacking = true;
 
         Vector2 startPos = transform.position;
         Vector2 riseTarget = startPos + Vector2.up * riseHeight;
 
-        // Elevación del boss
         while (Vector2.Distance(transform.position, riseTarget) > 0.05f)
         {
             transform.position = Vector2.MoveTowards(transform.position, riseTarget, riseSpeed * Time.deltaTime);
@@ -210,20 +255,17 @@ public class SeraphBoss : MonoBehaviour
 
         dashDamager.SetActive(true);
 
-        // Embestida hacia el jugador.
         Vector2 dashDir = (player.position - transform.position).normalized;
         Vector2 dashTarget = (Vector2)transform.position + dashDir * dashDistance;
-        
+
         while (Vector2.Distance(transform.position, dashTarget) > 0.05f)
         {
             transform.position = Vector2.MoveTowards(transform.position, dashTarget, dashSpeed * Time.deltaTime);
-
             yield return null;
         }
-        
+
         dashDamager.SetActive(false);
 
-        // Retroceso
         Vector2 retreatDir = -dashDir;
         Vector2 retreatTarget = (Vector2)transform.position + retreatDir * retreatDistance;
 
@@ -233,7 +275,6 @@ public class SeraphBoss : MonoBehaviour
             yield return null;
         }
 
-        // Retorno a la posición inicial
         while (Vector2.Distance(transform.position, _initialPosition) > 0.05f)
         {
             transform.position = Vector2.MoveTowards(transform.position, _initialPosition, returnSpeed * Time.deltaTime);
@@ -243,30 +284,21 @@ public class SeraphBoss : MonoBehaviour
         _isAttacking = false;
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, 0.6f);
-    }
-
     public IEnumerator AbsorptionAttack(int phase)
     {
         Debug.Log($"Iniciando ataque de absorción (fase {phase})");
 
-        float absorptionDuration = 2f + (phase * 0.5f); 
-        float totalDuration = 5f;                       
-        float shootInterval = 0.25f; 
+        float absorptionDuration = 2f + (phase * 0.5f);
+        float totalDuration = 5f;
+        float shootInterval = 0.25f;
         float shootTimer = 0f;
         float elapsed = 0f;
         float absorptionTimer = 0f;
         float angleOffset = 0f;
+        int bulletCount = 12;
 
-        int bulletCount = 12; // cantidad de balas por anillo
-
-        // --- Mientras dure todo el ataque ---
         while (elapsed < totalDuration)
         {
-            // --- 1. Atraer jugador sólo durante absorptionDuration ---
             if (absorptionTimer < absorptionDuration && player != null)
             {
                 Vector3 dir = (transform.position - player.position).normalized;
@@ -274,12 +306,11 @@ public class SeraphBoss : MonoBehaviour
                 absorptionTimer += Time.deltaTime;
             }
 
-            // --- 2. Disparo continuo en espiral ---
             shootTimer += Time.deltaTime;
             if (shootTimer >= shootInterval)
             {
                 ShootRadial(bulletCount, angleOffset);
-                angleOffset += 10f; // hace girar el patrón
+                angleOffset += 10f;
                 shootTimer = 0f;
             }
 
@@ -302,7 +333,6 @@ public class SeraphBoss : MonoBehaviour
                                                  Mathf.Sin(angle * Mathf.Deg2Rad));
 
             GameObject projectile = Instantiate(orbPrefab, firePoint.position, Quaternion.identity);
-
             projectile.GetComponent<FireBall>().SetDirection(shootDirection);
         }
     }
@@ -325,6 +355,12 @@ public class SeraphBoss : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, 0.6f);
     }
 }
 

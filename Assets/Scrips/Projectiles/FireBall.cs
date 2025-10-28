@@ -50,7 +50,7 @@ public class FireBall : MonoBehaviour
 
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             if (sr != null)
-                sr.color = Color.green;
+                sr.color = Color.yellow;
         }
 
     }

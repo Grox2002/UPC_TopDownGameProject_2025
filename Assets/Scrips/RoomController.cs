@@ -8,22 +8,22 @@ public class RoomController : MonoBehaviour
 
     [SerializeField] private RoomSpawner spawner; 
 
-    private bool _playerInside;
+    //private bool _playerInside;
     private bool _fightStarted;
-    private bool _roomCleared;
+    //private bool _roomCleared;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !_fightStarted)
         {
-            _playerInside = true;
+            //_playerInside = true;
             StartCoroutine(StartEncounter());
         }
     }
 
     private IEnumerator StartEncounter()
     {
-        _fightStarted = true;
+        //_fightStarted = true;
         CloseDoors();
 
         
@@ -35,7 +35,7 @@ public class RoomController : MonoBehaviour
         yield return new WaitUntil(() => spawner.AllEnemiesDefeated());
 
         OpenDoors();
-        _roomCleared = true;
+        //_roomCleared = true;
     }
 
     private void CloseDoors()

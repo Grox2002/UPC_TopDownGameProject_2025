@@ -3,6 +3,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     //Variables
+    [Header("General Configuration")]
     [SerializeField] private float _speed = 10f;
     [SerializeField] private int _damage = 10;
 
@@ -11,11 +12,18 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector2 _direction;
 
+    [Header("Sonido")]
+    [SerializeField] private AudioClip arrowSound; // sonido de la flecha
+    [SerializeField] private float volume = 0.8f;
+
     //Metodos
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+
+        if (arrowSound != null)
+            AudioSource.PlayClipAtPoint(arrowSound, transform.position, volume);
 
         Destroy(gameObject, lifeTime);
     }

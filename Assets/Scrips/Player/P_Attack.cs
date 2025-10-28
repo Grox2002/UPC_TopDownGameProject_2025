@@ -5,31 +5,32 @@ using System;
 
 public class P_Attack : MonoBehaviour
 {
-    //Variables
+    //===========================//Variables//====================================//
+    [Header("Referencais")]
     [SerializeField] private ShootController _shootController;
     [SerializeField] private GameObject _bow;
 
     [SerializeField] private MeleeController _meleeController;
-    [SerializeField] private Parry _parry;
 
     private P_Movement _playerMovement;
     public Vector2 GetLastDirection() {return _playerMovement._lastDirection;}
     public bool IsPlayerMoving() => _playerMovement.IsMoving;
 
+    [Header("Mira")]
     public Texture2D cursorTexture;
     [SerializeField] private Vector2 _cursorPos;
 
     private Animator _animator;
 
 
-    //Estamina
+    [Header("Stamina System")]
     [SerializeField] private float _maxStamina;
     [SerializeField] private float _currentStamina;
     [SerializeField] private float _lastStaminaUseTime;
     [SerializeField] private float _staminaRegenRate = 1f;
     [SerializeField] private float _staminaRegenDelay = 2f;
 
-    //Metodos
+    //=========================//Metodos//========================================//
     private void Start()
     {
         _cursorPos = new Vector2(16, 16);
@@ -45,19 +46,11 @@ public class P_Attack : MonoBehaviour
 
     private void Update()
     {
-        //Ataque melee
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(1))
         {
             StartCoroutine(MeleeAttackRoutine());
         }
-
-        //Parry
-        if (Input.GetMouseButtonDown(1))
-        {
-            _parry.ActiveParry();
-        }
-
-        //Regeneracion de estamian
+       
         if (Time.time >= _lastStaminaUseTime + _staminaRegenDelay && _currentStamina < _maxStamina)
         {
             _currentStamina += _staminaRegenRate * Time.deltaTime;
@@ -100,11 +93,26 @@ public class P_Attack : MonoBehaviour
 
         _meleeController.MeleeAttack();
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
 
         _playerMovement.canMove = true;
     }
+    
+    //Activa el hitbox de daño del ataque melee.
+    public void ActivateHitboxFromAnimation()
+    {
+        if (_meleeController != null)
+            _meleeController.DealMeleeDamage();
+    }
 
+    //Activa el hitbox del parry.
+    public void ActivateHitBoxParryFromAnimation()
+    {
+        if (_meleeController != null)
+            _meleeController.ActivateParry();
+    }
+
+    //Mientras se ejecute el ataque a distancia, se interumpe el movimiento.
     public IEnumerator RangedAttackRoutine()
     {
         _playerMovement.canMove = false;

@@ -44,14 +44,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1877706986597439237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24eb130879235ce46b7291d469f7cba7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a62f4d92d694b24ebb821d5f78841fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DivinePunishmentAttack
-  damagePerSecond: 20
-  duration: 4
   followSpeed: 2
-  minDistance: 0.5
-  offset: {x: 0, y: 0, z: 0}
+  damagePerSecond: 1000
 --- !u!212 &1894790417863776619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77,7 +74,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d1086598e9f394d4f925e10fdcfba42f, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

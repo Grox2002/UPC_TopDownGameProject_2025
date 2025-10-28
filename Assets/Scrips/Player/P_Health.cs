@@ -35,8 +35,9 @@ public class P_Health : MonoBehaviour
 
         if (_currentHealth <= 0f)
         {
-            Die();
             GameManager.Instance.GameOver();
+            Die();
+            //GameManager.Instance.GameOver();
         }
         else if (damage > 0f)
         {

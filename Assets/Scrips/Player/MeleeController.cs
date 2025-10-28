@@ -4,32 +4,39 @@ using System.Collections;
 
 public class MeleeController : MonoBehaviour 
 {
-    //Variables
-    [Header("Attack Points")]
-    [SerializeField] private GameObject _hitBoxUp;
-    [SerializeField] private GameObject _hitBoxDown;
-    [SerializeField] private GameObject _hitBoxLeft;
-    [SerializeField] private GameObject _hitBoxRight;
-  
+    [Header("Attack Origins")]
+    [SerializeField] private Transform _attackOriginUp;
+    [SerializeField] private Transform _attackOriginDown;
+    [SerializeField] private Transform _attackOriginLeft;
+    [SerializeField] private Transform _attackOriginRight;
+
+    [Header("Configuración")]
+    [SerializeField] private float _attackRange = 1f;
     [SerializeField] private float _attackCooldown = 0.5f;
     [SerializeField] private float _hitboxDuration = 0.3f;
     [SerializeField] private float _meleeStaminaCost = 1f;
+    [SerializeField] private LayerMask _enemyLayer;
+    [SerializeField] private float _damage;
+
+    [Header("Parry")]
+    [SerializeField] private GameObject _parryHitBoxUp;
+    [SerializeField] private GameObject _parryHitBoxDown;
+    [SerializeField] private GameObject _parryHitBoxLeft;
+    [SerializeField] private GameObject _parryHitBoxRight;
 
     private float _nextAttackTime;
     private P_Attack _playerAttack;
     private Animator _animator;
+    private Vector2 _lastAttackDirection;
+    //private bool _isAttacking;
 
-
-    //Metodos
     private void Start()
     {
-        DisableAllHitboxes();
-
         _playerAttack = GetComponentInParent<P_Attack>();
-
         _animator = GetComponentInParent<Animator>();
     }
-    
+
+    // Este metodo es llamado desde P_Attack
     public void MeleeAttack()
     {
         if (Time.time < _nextAttackTime) return;
@@ -38,66 +45,88 @@ public class MeleeController : MonoBehaviour
         _nextAttackTime = Time.time + _attackCooldown;
 
         Vector2 dir;
-
         if (_playerAttack.IsPlayerMoving())
-        {
             dir = _playerAttack.GetLastDirection();
-        }
         else
         {
             Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             dir = (mouseWorldPos - (Vector2)transform.position).normalized;
         }
 
-        MeleeAttackAnimation(dir);
+        _lastAttackDirection = dir;
 
-        if (Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
-        {
-            if (dir.y > 0)
-                StartCoroutine(ActivateHitbox(_hitBoxUp));
-            else
-                StartCoroutine(ActivateHitbox(_hitBoxDown));
-        }
-        else
-        {
-            if (dir.x > 0)
-                StartCoroutine(ActivateHitbox(_hitBoxRight));
-            else
-                StartCoroutine(ActivateHitbox(_hitBoxLeft));
-        } 
-    }
-    
-    private IEnumerator ActivateHitbox(GameObject hitbox)
-    {
-
-        hitbox.SetActive(true);
-
-        yield return new WaitForSeconds(_hitboxDuration);
-
-        hitbox.SetActive(false);
-        
-    }
-
-    private void DisableAllHitboxes()
-    {
-        _hitBoxUp.SetActive(false);
-        _hitBoxDown.SetActive(false);
-        _hitBoxLeft.SetActive(false);
-        _hitBoxRight.SetActive(false);
-    }
-
-    private void MeleeAttackAnimation(Vector2 dir)
-    {
         _animator.SetTrigger("MeleeAttack");
+        SetAnimatorDirection(dir);
+    }
 
+    // Elige la animación segun la direccion
+    private void SetAnimatorDirection(Vector2 dir)
+    {
         if (Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
-        {
-            _animator.SetInteger("Direction", dir.y > 0 ? 0 : 1);
-        }
+            _animator.SetInteger("Direction", dir.y > 0 ? 0 : 1); // 0=Up, 1=Down
         else
+            _animator.SetInteger("Direction", dir.x > 0 ? 3 : 2); // 3=Right, 2=Left
+    }
+
+    // Llamado desde Animation Event
+    public void DealMeleeDamage()
+    {
+        Transform origin = GetAttackOrigin(_lastAttackDirection);
+        if (origin == null) return;
+
+        Vector2 attackPos = origin.position;
+        float radius = _attackRange;
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPos, radius, _enemyLayer);
+        foreach (var hit in hits)
         {
-            _animator.SetInteger("Direction", dir.x > 0 ? 3 : 2);
+            E_Health health = hit.GetComponent<E_Health>();
+            if (health != null)
+                health.TakeDamage(_damage); 
         }
+
+
+        Debug.DrawLine(transform.position, attackPos, Color.red, 0.2f);
+    }
+
+    private Transform GetAttackOrigin(Vector2 dir)
+    {
+        if (Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
+            return dir.y > 0 ? _attackOriginUp : _attackOriginDown;
+        else
+            return dir.x > 0 ? _attackOriginRight : _attackOriginLeft;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        if (_attackOriginUp != null) Gizmos.DrawWireSphere(_attackOriginUp.position, _attackRange);
+        if (_attackOriginDown != null) Gizmos.DrawWireSphere(_attackOriginDown.position, _attackRange);
+        if (_attackOriginLeft != null) Gizmos.DrawWireSphere(_attackOriginLeft.position, _attackRange);
+        if (_attackOriginRight != null) Gizmos.DrawWireSphere(_attackOriginRight.position, _attackRange);
+    }
+
+    // ---- PARRY ---- //
+    public void ActivateParry()
+    {
+        GameObject hitbox = GetParryHitboxByDirection(_lastAttackDirection);
+        if (hitbox != null)
+            StartCoroutine(ActivateParryHitboxCoroutine(hitbox));
+    }
+
+    private GameObject GetParryHitboxByDirection(Vector2 dir)
+    {
+        if (Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
+            return dir.y > 0 ? _parryHitBoxUp : _parryHitBoxDown;
+        else
+            return dir.x > 0 ? _parryHitBoxRight : _parryHitBoxLeft;
+    }
+
+    private IEnumerator ActivateParryHitboxCoroutine(GameObject hitbox)
+    {
+        hitbox.SetActive(true);
+        yield return new WaitForSeconds(_hitboxDuration);
+        hitbox.SetActive(false);
     }
 }
 

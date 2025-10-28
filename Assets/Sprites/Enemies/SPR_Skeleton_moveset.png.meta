@@ -196,10 +196,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 223
-        width: 19
-        height: 32
+        x: 7
+        y: 224
+        width: 17
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 223
-        width: 19
-        height: 33
+        x: 39
+        y: 224
+        width: 17
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +240,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 223
-        width: 19
-        height: 33
+        x: 71
+        y: 224
+        width: 17
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +262,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_3
       rect:
         serializedVersion: 2
-        x: 102
-        y: 223
-        width: 19
-        height: 32
+        x: 103
+        y: 224
+        width: 17
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +284,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 159
-        width: 18
-        height: 32
+        x: 6
+        y: 160
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +306,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_5
       rect:
         serializedVersion: 2
-        x: 6
-        y: 191
-        width: 19
-        height: 31
+        x: 7
+        y: 192
+        width: 17
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_6
       rect:
         serializedVersion: 2
-        x: 37
-        y: 159
-        width: 18
-        height: 33
+        x: 38
+        y: 160
+        width: 16
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,10 +350,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_7
       rect:
         serializedVersion: 2
-        x: 38
-        y: 191
-        width: 19
-        height: 30
+        x: 39
+        y: 192
+        width: 17
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +372,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_8
       rect:
         serializedVersion: 2
-        x: 69
-        y: 159
-        width: 18
-        height: 33
+        x: 70
+        y: 160
+        width: 16
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +394,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_9
       rect:
         serializedVersion: 2
-        x: 71
-        y: 191
-        width: 19
-        height: 31
+        x: 72
+        y: 192
+        width: 17
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +416,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_10
       rect:
         serializedVersion: 2
-        x: 101
-        y: 159
-        width: 18
-        height: 32
+        x: 102
+        y: 160
+        width: 16
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,10 +438,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_11
       rect:
         serializedVersion: 2
-        x: 103
-        y: 191
-        width: 19
-        height: 30
+        x: 104
+        y: 192
+        width: 17
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,10 +460,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_12
       rect:
         serializedVersion: 2
-        x: 5
-        y: 127
-        width: 18
-        height: 32
+        x: 6
+        y: 128
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,10 +482,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_13
       rect:
         serializedVersion: 2
-        x: 7
-        y: 95
-        width: 18
-        height: 32
+        x: 8
+        y: 96
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +504,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_14
       rect:
         serializedVersion: 2
-        x: 37
-        y: 127
-        width: 18
-        height: 31
+        x: 38
+        y: 128
+        width: 16
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +526,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_15
       rect:
         serializedVersion: 2
-        x: 39
-        y: 95
-        width: 18
-        height: 33
+        x: 40
+        y: 96
+        width: 16
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,10 +548,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_16
       rect:
         serializedVersion: 2
-        x: 69
-        y: 127
-        width: 18
-        height: 31
+        x: 70
+        y: 128
+        width: 16
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_17
       rect:
         serializedVersion: 2
-        x: 71
-        y: 95
-        width: 18
-        height: 33
+        x: 72
+        y: 96
+        width: 16
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -592,10 +592,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_18
       rect:
         serializedVersion: 2
-        x: 101
-        y: 127
-        width: 18
-        height: 32
+        x: 102
+        y: 128
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,10 +614,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_19
       rect:
         serializedVersion: 2
-        x: 103
-        y: 95
-        width: 18
-        height: 32
+        x: 104
+        y: 96
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,10 +636,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_20
       rect:
         serializedVersion: 2
-        x: 6
-        y: 31
-        width: 19
-        height: 32
+        x: 7
+        y: 32
+        width: 17
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -658,10 +658,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_21
       rect:
         serializedVersion: 2
-        x: 7
-        y: 63
-        width: 18
-        height: 32
+        x: 8
+        y: 64
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_22
       rect:
         serializedVersion: 2
-        x: 38
-        y: 31
-        width: 19
-        height: 33
+        x: 39
+        y: 32
+        width: 17
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -702,10 +702,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_23
       rect:
         serializedVersion: 2
-        x: 39
-        y: 63
-        width: 18
-        height: 31
+        x: 40
+        y: 64
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,10 +724,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_24
       rect:
         serializedVersion: 2
-        x: 70
-        y: 31
-        width: 19
-        height: 33
+        x: 71
+        y: 32
+        width: 17
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,10 +746,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_25
       rect:
         serializedVersion: 2
-        x: 71
-        y: 63
-        width: 18
-        height: 31
+        x: 72
+        y: 64
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -768,10 +768,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_26
       rect:
         serializedVersion: 2
-        x: 102
+        x: 103
         y: 31
-        width: 19
-        height: 32
+        width: 17
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,10 +790,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_27
       rect:
         serializedVersion: 2
-        x: 103
-        y: 63
-        width: 18
-        height: 32
+        x: 104
+        y: 64
+        width: 16
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -812,10 +812,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_28
       rect:
         serializedVersion: 2
-        x: 6
+        x: 7
         y: 0
-        width: 19
-        height: 30
+        width: 17
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -834,10 +834,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_29
       rect:
         serializedVersion: 2
-        x: 38
+        x: 39
         y: 0
-        width: 19
-        height: 29
+        width: 17
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,10 +856,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_30
       rect:
         serializedVersion: 2
-        x: 71
+        x: 72
         y: 0
-        width: 19
-        height: 30
+        width: 17
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -878,10 +878,10 @@ TextureImporter:
       name: SPR_Skeleton_moveset_31
       rect:
         serializedVersion: 2
-        x: 103
+        x: 104
         y: 0
-        width: 19
-        height: 29
+        width: 17
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

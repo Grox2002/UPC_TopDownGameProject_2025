@@ -9,7 +9,7 @@ public class NPCDialog : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.T))
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             dialogManager.StartDialogue(dialogue);
         }

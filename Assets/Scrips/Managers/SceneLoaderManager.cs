@@ -34,6 +34,8 @@ public class SceneLoaderManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("VictoryScene");
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("MainMenu");
     }
 
     //Load main menu scene
