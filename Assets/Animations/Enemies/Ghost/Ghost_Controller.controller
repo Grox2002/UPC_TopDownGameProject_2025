@@ -17,19 +17,19 @@ AnimatorStateMachine:
     m_Position: {x: 270, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8568336875664263586}
-    m_Position: {x: 660, y: -80, z: 0}
+    m_Position: {x: 890, y: -350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2039091938534290846}
-    m_Position: {x: 710, y: 70, z: 0}
+    m_Position: {x: 1070, y: -60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 335694520144122329}
-    m_Position: {x: 700, y: 220, z: 0}
+    m_Position: {x: 1120, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8089752888152559304}
-    m_Position: {x: 630, y: 330, z: 0}
+    m_Position: {x: 980, y: 660, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1316458767495686941}
-    m_Position: {x: 280, y: -30, z: 0}
+    m_Position: {x: 30, y: -100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -8265173516334815402}
@@ -235,9 +235,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.25
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -503,9 +503,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.25
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -525,9 +525,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.25
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -547,9 +547,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.25
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0

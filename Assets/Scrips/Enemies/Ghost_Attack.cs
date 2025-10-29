@@ -60,7 +60,7 @@ public class Ghost_Attack : MonoBehaviour
     public void ShootProjectileFromAnimation()
     {
         GameObject projectile = Instantiate(_projectilePrefab, _firePoint.position, Quaternion.identity);
-        FireBall fireball = projectile.GetComponent<FireBall>();
+        E_Projectile fireball = projectile.GetComponent<E_Projectile>();
         if (fireball != null)
             fireball.SetDirection(_lastShotDirection);
     }

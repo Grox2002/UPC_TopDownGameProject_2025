@@ -15,6 +15,7 @@ TagManager:
   - AttackPoint
   - Melee
   - Parry
+  - BossBullet
   layers:
   - Default
   - TransparentFX

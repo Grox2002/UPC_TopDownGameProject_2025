@@ -6,28 +6,28 @@ public class SeraphBoss : MonoBehaviour
 {
     //===============================VARIABLES====================================================//
 
-    [Header("Configuración de salud")]
+    [Header("Health Configuration")]
     [SerializeField] private int _maxHealth = 1000;
     private int _currentHealth;
     private int _currentPhase = 1;
     private bool _isInvulnerable = false;
 
-    [Header("Referencias")]
+    [Header("References")]
     [SerializeField] private Transform player;
     private SpriteRenderer _spriteRenderer;
     private bool _canFight;
 
-    [Header("Ataque: Suelo Sagrado")]
+    [Header("Attack: Sacred Ground")]
     public GameObject sacredZonePrefab;
     public Transform[] spawnPoints;
     public int zonesPerWave = 3;
 
     [SerializeField] private float attackInterval = 5f;
 
-    [Header("Ataque: Castigo Divino")]
+    [Header("Attack: Divine Punishment")]
     public GameObject sacredLightningPrefab;
 
-    [Header("Ataque: Embestida")]
+    [Header("Attack: Celestial Charge")]
     [SerializeField] private float riseHeight = 2f;
     [SerializeField] private float riseSpeed = 3f;
     [SerializeField] private float dashDistance = 6f;
@@ -41,14 +41,14 @@ public class SeraphBoss : MonoBehaviour
     private bool _isAttacking = false;
     private Vector2 _initialPosition;
 
-    [Header("Ataque: Absorcion")]
+    [Header("Ataque: Radial Fire")]
     public GameObject orbPrefab;
     public float pullForce = 5f;
     public int baseOrbCount = 4;
     public float orbCooldown = 2f;
     public Transform firePoint;
 
-    [Header("Efecto de flote")]
+    [Header("Float Effect")]
     [SerializeField] private Transform visualTransform;
     [SerializeField] private float floatAmplitude = 0.25f;
     [SerializeField] private float floatSpeed = 2f;
@@ -189,7 +189,7 @@ public class SeraphBoss : MonoBehaviour
         Debug.Log($"Cambiando a fase {newPhase}...");
 
         // Lanza ataque de absorción (bloquea otros ataques automáticamente)
-        yield return StartCoroutine(AbsorptionAttack(newPhase));
+        yield return StartCoroutine(RadialAttack(newPhase));
 
         // Espera visual / transición
         yield return new WaitForSeconds(1f);
@@ -284,33 +284,24 @@ public class SeraphBoss : MonoBehaviour
         _isAttacking = false;
     }
 
-    public IEnumerator AbsorptionAttack(int phase)
+    public IEnumerator RadialAttack(int phase)
     {
-        Debug.Log($"Iniciando ataque de absorción (fase {phase})");
+        Debug.Log($"Iniciando ataque radial (fase {phase})");
 
-        float absorptionDuration = 2f + (phase * 0.5f);
-        float totalDuration = 5f;
-        float shootInterval = 0.25f;
+        float totalDuration = 5f;          // Duración total del ataque
+        float shootInterval = 0.25f;       // Intervalo entre disparos
         float shootTimer = 0f;
         float elapsed = 0f;
-        float absorptionTimer = 0f;
         float angleOffset = 0f;
         int bulletCount = 12;
 
         while (elapsed < totalDuration)
         {
-            if (absorptionTimer < absorptionDuration && player != null)
-            {
-                Vector3 dir = (transform.position - player.position).normalized;
-                player.position += dir * pullForce * Time.deltaTime;
-                absorptionTimer += Time.deltaTime;
-            }
-
             shootTimer += Time.deltaTime;
             if (shootTimer >= shootInterval)
             {
                 ShootRadial(bulletCount, angleOffset);
-                angleOffset += 10f;
+                angleOffset += 10f;          // Rotación progresiva de los disparos
                 shootTimer = 0f;
             }
 
@@ -319,7 +310,7 @@ public class SeraphBoss : MonoBehaviour
         }
 
         yield return new WaitForSeconds(orbCooldown);
-        Debug.Log("Absorción finalizada");
+        Debug.Log("Ataque radial finalizado");
     }
 
     void ShootRadial(int bulletCount, float angleOffset = 0f)
@@ -333,7 +324,7 @@ public class SeraphBoss : MonoBehaviour
                                                  Mathf.Sin(angle * Mathf.Deg2Rad));
 
             GameObject projectile = Instantiate(orbPrefab, firePoint.position, Quaternion.identity);
-            projectile.GetComponent<FireBall>().SetDirection(shootDirection);
+            projectile.GetComponent<E_Projectile>().SetDirection(shootDirection);
         }
     }
 
