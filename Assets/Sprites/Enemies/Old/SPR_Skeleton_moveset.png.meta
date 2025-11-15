@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 6b55e17ba052f28488d90aa8c40239b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7060706543949637619
+    second: SPR_Skeleton_moveset_0
+  - first:
+      213: 2495223880093386816
+    second: SPR_Skeleton_moveset_1
+  - first:
+      213: -7459568942074123485
+    second: SPR_Skeleton_moveset_2
+  - first:
+      213: -4851228569529667501
+    second: SPR_Skeleton_moveset_3
+  - first:
+      213: -72660998488723192
+    second: SPR_Skeleton_moveset_4
+  - first:
+      213: 2696142193116595520
+    second: SPR_Skeleton_moveset_5
+  - first:
+      213: 2544469954155200374
+    second: SPR_Skeleton_moveset_6
+  - first:
+      213: 4272267766928774051
+    second: SPR_Skeleton_moveset_7
+  - first:
+      213: -5460388893672008704
+    second: SPR_Skeleton_moveset_8
+  - first:
+      213: 4858279065723139127
+    second: SPR_Skeleton_moveset_9
+  - first:
+      213: -1817853943216867104
+    second: SPR_Skeleton_moveset_10
+  - first:
+      213: -2127788397963267895
+    second: SPR_Skeleton_moveset_11
+  - first:
+      213: 4000762585922927895
+    second: SPR_Skeleton_moveset_12
+  - first:
+      213: 2649342400217260655
+    second: SPR_Skeleton_moveset_13
+  - first:
+      213: 7530702085335504812
+    second: SPR_Skeleton_moveset_14
+  - first:
+      213: -3836098584805720269
+    second: SPR_Skeleton_moveset_15
+  - first:
+      213: -2883944694058647327
+    second: SPR_Skeleton_moveset_16
+  - first:
+      213: -5316362444251532276
+    second: SPR_Skeleton_moveset_17
+  - first:
+      213: 1180291037805769015
+    second: SPR_Skeleton_moveset_18
+  - first:
+      213: 595962189950954080
+    second: SPR_Skeleton_moveset_19
+  - first:
+      213: -5011584729060674420
+    second: SPR_Skeleton_moveset_20
+  - first:
+      213: 1170315035272043035
+    second: SPR_Skeleton_moveset_21
+  - first:
+      213: -3836122031815065123
+    second: SPR_Skeleton_moveset_22
+  - first:
+      213: 9104186537534605227
+    second: SPR_Skeleton_moveset_23
+  - first:
+      213: -9055027991781631522
+    second: SPR_Skeleton_moveset_24
+  - first:
+      213: -7879270792468850216
+    second: SPR_Skeleton_moveset_25
+  - first:
+      213: 9145136546351640127
+    second: SPR_Skeleton_moveset_26
+  - first:
+      213: -5599121574002533665
+    second: SPR_Skeleton_moveset_27
+  - first:
+      213: 793711074152027011
+    second: SPR_Skeleton_moveset_28
+  - first:
+      213: -6630478490620734396
+    second: SPR_Skeleton_moveset_29
+  - first:
+      213: -2974807757211004768
+    second: SPR_Skeleton_moveset_30
+  - first:
+      213: 8336288304857076752
+    second: SPR_Skeleton_moveset_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 224
+        width: 17
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d081b98bec4530e90800000000000000
+      internalID: -7060706543949637619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 224
+        width: 17
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048c90016e0d0a220800000000000000
+      internalID: 2495223880093386816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 224
+        width: 17
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ba226d1994a7890800000000000000
+      internalID: -7459568942074123485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 224
+        width: 17
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35035f4a159fcacb0800000000000000
+      internalID: -4851228569529667501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 160
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801fd04f43bddfef0800000000000000
+      internalID: -72660998488723192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 192
+        width: 17
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04548a43a0f9a6520800000000000000
+      internalID: 2696142193116595520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 160
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f331f21f5cf4320800000000000000
+      internalID: 2544469954155200374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 192
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3142906e42a4b30800000000000000
+      internalID: 4272267766928774051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_8
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 160
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00411394b3dc834b0800000000000000
+      internalID: -5460388893672008704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 17
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734f42ce1131c6340800000000000000
+      internalID: 4858279065723139127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 160
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8f305587fa5c6e0800000000000000
+      internalID: -1817853943216867104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 192
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0b33eb9b39872e0800000000000000
+      internalID: -2127788397963267895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71dfb9cff50958730800000000000000
+      internalID: 4000762585922927895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62a45d40ea54c420800000000000000
+      internalID: 2649342400217260655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 128
+        width: 16
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca757b1b5ad628860800000000000000
+      internalID: 7530702085335504812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fb64169a073cac0800000000000000
+      internalID: -3836098584805720269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_16
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 128
+        width: 16
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e003ce949b2af7d0800000000000000
+      internalID: -2883944694058647327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04f825368c7836b0800000000000000
+      internalID: -5316362444251532276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_18
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 128
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7317df7027c316010800000000000000
+      internalID: 1180291037805769015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a27974478454800800000000000000
+      internalID: 595962189950954080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 17
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84f09ecd36437ab0800000000000000
+      internalID: -5011584729060674420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a50b0f25bcd3010800000000000000
+      internalID: 1170315035272043035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 32
+        width: 17
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd10d92365b53cac0800000000000000
+      internalID: -3836122031815065123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_23
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7c4aa7b61985e70800000000000000
+      internalID: 9104186537534605227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 32
+        width: 17
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed913ae5404165280800000000000000
+      internalID: -9055027991781631522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d998cdd5f437a290800000000000000
+      internalID: -7879270792468850216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 31
+        width: 17
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e6bb36c3d0aee70800000000000000
+      internalID: 9145136546351640127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_27
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 64
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda5a57089ceb42b0800000000000000
+      internalID: -5599121574002533665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 17
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38310254404d30b00800000000000000
+      internalID: 793711074152027011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444deab41fecbf3a0800000000000000
+      internalID: -6630478490620734396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_30
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 17
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a09c542b1c57b6d0800000000000000
+      internalID: -2974807757211004768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Skeleton_moveset_31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014df34bb0270b370800000000000000
+      internalID: 8336288304857076752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bc27b740d4ba102449363defabad5f2a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_Skeleton_moveset_0: -7060706543949637619
+      SPR_Skeleton_moveset_1: 2495223880093386816
+      SPR_Skeleton_moveset_10: -1817853943216867104
+      SPR_Skeleton_moveset_11: -2127788397963267895
+      SPR_Skeleton_moveset_12: 4000762585922927895
+      SPR_Skeleton_moveset_13: 2649342400217260655
+      SPR_Skeleton_moveset_14: 7530702085335504812
+      SPR_Skeleton_moveset_15: -3836098584805720269
+      SPR_Skeleton_moveset_16: -2883944694058647327
+      SPR_Skeleton_moveset_17: -5316362444251532276
+      SPR_Skeleton_moveset_18: 1180291037805769015
+      SPR_Skeleton_moveset_19: 595962189950954080
+      SPR_Skeleton_moveset_2: -7459568942074123485
+      SPR_Skeleton_moveset_20: -5011584729060674420
+      SPR_Skeleton_moveset_21: 1170315035272043035
+      SPR_Skeleton_moveset_22: -3836122031815065123
+      SPR_Skeleton_moveset_23: 9104186537534605227
+      SPR_Skeleton_moveset_24: -9055027991781631522
+      SPR_Skeleton_moveset_25: -7879270792468850216
+      SPR_Skeleton_moveset_26: 9145136546351640127
+      SPR_Skeleton_moveset_27: -5599121574002533665
+      SPR_Skeleton_moveset_28: 793711074152027011
+      SPR_Skeleton_moveset_29: -6630478490620734396
+      SPR_Skeleton_moveset_3: -4851228569529667501
+      SPR_Skeleton_moveset_30: -2974807757211004768
+      SPR_Skeleton_moveset_31: 8336288304857076752
+      SPR_Skeleton_moveset_4: -72660998488723192
+      SPR_Skeleton_moveset_5: 2696142193116595520
+      SPR_Skeleton_moveset_6: 2544469954155200374
+      SPR_Skeleton_moveset_7: 4272267766928774051
+      SPR_Skeleton_moveset_8: -5460388893672008704
+      SPR_Skeleton_moveset_9: 4858279065723139127
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

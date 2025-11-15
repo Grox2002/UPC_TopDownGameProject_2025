@@ -27,6 +27,7 @@ public class SeraphBoss : MonoBehaviour
 
     [Header("Attack: Divine Punishment")]
     public GameObject sacredLightningPrefab;
+    [SerializeField] private AudioClip _laserImpactSound;
 
     [Header("Attack: Celestial Charge")]
     [SerializeField] private float riseHeight = 2f;
@@ -235,6 +236,8 @@ public class SeraphBoss : MonoBehaviour
 
     private IEnumerator DivinePunishmentCoroutine()
     {
+        _audioSource.PlayOneShot(_laserImpactSound, _volume);
+
         if (player == null) yield break;
         yield return new WaitForSeconds(0.5f);
         Instantiate(sacredLightningPrefab, player.position, Quaternion.identity);

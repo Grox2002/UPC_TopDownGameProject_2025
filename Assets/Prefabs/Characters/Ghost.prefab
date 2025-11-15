@@ -155,7 +155,7 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 5676044216331608687, guid: 0e2dfdf38fa909441ba563293b89c29d, type: 3}
   _firePoint: {fileID: 6937161000906781734}
   _fireRate: 1.5
-  _attackRange: 2.5
+  _attackRange: 4
   _obstacleMask:
     serializedVersion: 2
     m_Bits: 512

@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class RoomController : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> puertas;
-    [SerializeField] private List<RoomSpawner> spawners;
+    [SerializeField] private List<GameObject> _doors;
+    [SerializeField] private List<RoomSpawner> _spawners;
 
     private bool _fightStarted;
+
+    private AudioSource _audioSource;
+
+    public AudioClip openDoorSound;
+
+    public AudioClip closeDoorSound;
+
+    public float volume;
+
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,7 +40,7 @@ public class RoomController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         // Llamar a todos los spawners
-        foreach (var spawner in spawners)
+        foreach (var spawner in _spawners)
         {
             spawner.SpawnEnemies();
         }
@@ -39,7 +53,7 @@ public class RoomController : MonoBehaviour
 
     private bool AllSpawnersCleared()
     {
-        foreach (var spawner in spawners)
+        foreach (var spawner in _spawners)
         {
             if (!spawner.AllEnemiesDefeated())
                 return false;
@@ -49,7 +63,9 @@ public class RoomController : MonoBehaviour
 
     private void CloseDoors()
     {
-        foreach (var puerta in puertas)
+        
+
+        foreach (var puerta in _doors)
         {
             puerta.SetActive(true);
         }
@@ -58,7 +74,8 @@ public class RoomController : MonoBehaviour
 
     private void OpenDoors()
     {
-        foreach (var puerta in puertas)
+
+        foreach (var puerta in _doors)
         {
             puerta.SetActive(false);
         }
