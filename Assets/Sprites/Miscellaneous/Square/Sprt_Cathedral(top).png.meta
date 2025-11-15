@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: a025d4cc8a26b054d8731829aee4d887
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3481425854749564864
+    second: Sprt_Cathedral(top)_0
+  - first:
+      213: -6008800947400694415
+    second: Sprt_Cathedral(top)_1
+  - first:
+      213: 6431932652244275235
+    second: Sprt_Cathedral(top)_2
+  - first:
+      213: 2048606857246908547
+    second: Sprt_Cathedral(top)_3
+  - first:
+      213: -8208765065779712242
+    second: Sprt_Cathedral(top)_4
+  - first:
+      213: 1243016090725139244
+    second: Sprt_Cathedral(top)_5
+  - first:
+      213: -1219039201414537761
+    second: Sprt_Cathedral(top)_6
+  - first:
+      213: 1591906748664505149
+    second: Sprt_Cathedral(top)_7
+  - first:
+      213: 9151793791743781595
+    second: Sprt_Cathedral(top)_8
+  - first:
+      213: 3962205883790579402
+    second: Sprt_Cathedral(top)_9
+  - first:
+      213: 6273966095067363160
+    second: Sprt_Cathedral(top)_10
+  - first:
+      213: 4658818610941699839
+    second: Sprt_Cathedral(top)_11
+  - first:
+      213: -7578716132605502911
+    second: Sprt_Cathedral(top)_12
+  - first:
+      213: -3279916386552080292
+    second: Sprt_Cathedral(top)_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprt_Cathedral(top)_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 73
+        width: 192
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5894969c656b72d0800000000000000
+      internalID: -3279916386552080292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f5fcb13a216328b4389935743d30e7f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprt_Cathedral(top)_0: -3481425854749564864
+      Sprt_Cathedral(top)_1: -6008800947400694415
+      Sprt_Cathedral(top)_10: 6273966095067363160
+      Sprt_Cathedral(top)_11: 4658818610941699839
+      Sprt_Cathedral(top)_12: -7578716132605502911
+      Sprt_Cathedral(top)_13: -3279916386552080292
+      Sprt_Cathedral(top)_2: 6431932652244275235
+      Sprt_Cathedral(top)_3: 2048606857246908547
+      Sprt_Cathedral(top)_4: -8208765065779712242
+      Sprt_Cathedral(top)_5: 1243016090725139244
+      Sprt_Cathedral(top)_6: -1219039201414537761
+      Sprt_Cathedral(top)_7: 1591906748664505149
+      Sprt_Cathedral(top)_8: 9151793791743781595
+      Sprt_Cathedral(top)_9: 3962205883790579402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
