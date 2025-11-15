@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 947b90e952e369e40bb2ce2efda55753
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1618329286590995251
+    second: spr_npc_jesuiata_0
+  - first:
+      213: 6760697984953731604
+    second: spr_npc_jesuiata_1
+  - first:
+      213: -6805949469480996952
+    second: spr_npc_jesuiata_2
+  - first:
+      213: -2996008446995465032
+    second: spr_npc_jesuiata_3
+  - first:
+      213: -42887646390819749
+    second: spr_npc_jesuiata_4
+  - first:
+      213: -5639036454412649364
+    second: spr_npc_jesuiata_5
+  - first:
+      213: -5859003038022203833
+    second: spr_npc_jesuiata_6
+  - first:
+      213: -4356072430055565894
+    second: spr_npc_jesuiata_7
+  - first:
+      213: 2564908124804225909
+    second: spr_npc_jesuiata_8
+  - first:
+      213: 733143368851367114
+    second: spr_npc_jesuiata_9
+  - first:
+      213: -4008930944053454311
+    second: spr_npc_jesuiata_10
+  - first:
+      213: -6746794077191280199
+    second: spr_npc_jesuiata_11
+  - first:
+      213: 3714216425762672550
+    second: spr_npc_jesuiata_12
+  - first:
+      213: 1744337739667990999
+    second: spr_npc_jesuiata_13
+  - first:
+      213: 14119571605484492
+    second: spr_npc_jesuiata_14
+  - first:
+      213: 3836029682631855669
+    second: spr_npc_jesuiata_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 157
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b1ed079e5757610800000000000000
+      internalID: 1618329286590995251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 157
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41acdd26ff2d2dd50800000000000000
+      internalID: 6760697984953731604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 157
+        width: 21
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afa35854096c81a0800000000000000
+      internalID: -6805949469480996952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 157
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcf3c4e03a0c66d0800000000000000
+      internalID: -2996008446995465032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 109
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b546f9fa9e1a76ff0800000000000000
+      internalID: -42887646390819749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 109
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c714bb83e1eb1b0800000000000000
+      internalID: -5639036454412649364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 109
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74680cc77c3a0bea0800000000000000
+      internalID: -5859003038022203833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 109
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab55aae443f1c83c0800000000000000
+      internalID: -4356072430055565894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 61
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b187c9952689320800000000000000
+      internalID: 2564908124804225909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 61
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4a1d57206ac2a00800000000000000
+      internalID: 733143368851367114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 61
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a5f9eeb8a6d58c0800000000000000
+      internalID: -4008930944053454311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 61
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9ed4868829e52a0800000000000000
+      internalID: -6746794077191280199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 13
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af4184192c8b8330800000000000000
+      internalID: 3714216425762672550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 13
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9e73daee1253810800000000000000
+      internalID: 1744337739667990999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 13
+        width: 21
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3fce1fca9223000800000000000000
+      internalID: 14119571605484492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_npc_jesuiata_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 13
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e40251ca05c3530800000000000000
+      internalID: 3836029682631855669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1d2d46088987f0e4d9475e72cc0d6c93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spr_npc_jesuiata_0: 1618329286590995251
+      spr_npc_jesuiata_1: 6760697984953731604
+      spr_npc_jesuiata_10: -4008930944053454311
+      spr_npc_jesuiata_11: -6746794077191280199
+      spr_npc_jesuiata_12: 3714216425762672550
+      spr_npc_jesuiata_13: 1744337739667990999
+      spr_npc_jesuiata_14: 14119571605484492
+      spr_npc_jesuiata_15: 3836029682631855669
+      spr_npc_jesuiata_2: -6805949469480996952
+      spr_npc_jesuiata_3: -2996008446995465032
+      spr_npc_jesuiata_4: -42887646390819749
+      spr_npc_jesuiata_5: -5639036454412649364
+      spr_npc_jesuiata_6: -5859003038022203833
+      spr_npc_jesuiata_7: -4356072430055565894
+      spr_npc_jesuiata_8: 2564908124804225909
+      spr_npc_jesuiata_9: 733143368851367114
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

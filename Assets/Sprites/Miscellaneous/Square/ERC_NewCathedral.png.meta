@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 98c5edd6e3426fe4c8499aaf889f60be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5293722829304628743
+    second: ERC_NewCathedral_0
+  - first:
+      213: 1649201313509168831
+    second: ERC_NewCathedral_1
+  - first:
+      213: 8196649815508872622
+    second: ERC_NewCathedral_2
+  - first:
+      213: 3139337554479899304
+    second: ERC_NewCathedral_3
+  - first:
+      213: 4339945387485643009
+    second: ERC_NewCathedral_4
+  - first:
+      213: -3344315621974513834
+    second: ERC_NewCathedral_5
+  - first:
+      213: 2396230168417275799
+    second: ERC_NewCathedral_6
+  - first:
+      213: -1671882959511347274
+    second: ERC_NewCathedral_7
+  - first:
+      213: -5475920057092411326
+    second: ERC_NewCathedral_8
+  - first:
+      213: -6991021128632913897
+    second: ERC_NewCathedral_9
+  - first:
+      213: -1695785074005318859
+    second: ERC_NewCathedral_10
+  - first:
+      213: -3999403378451044971
+    second: ERC_NewCathedral_11
+  - first:
+      213: -5979541140251208093
+    second: ERC_NewCathedral_12
+  - first:
+      213: 1523437726112356968
+    second: ERC_NewCathedral_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ERC_NewCathedral_11
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 196
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595ade921d34f78c0800000000000000
+      internalID: -3999403378451044971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f164bdd4dd8913d488af730e02250a9c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ERC_NewCathedral_0: -5293722829304628743
+      ERC_NewCathedral_1: 1649201313509168831
+      ERC_NewCathedral_10: -1695785074005318859
+      ERC_NewCathedral_11: -3999403378451044971
+      ERC_NewCathedral_12: -5979541140251208093
+      ERC_NewCathedral_13: 1523437726112356968
+      ERC_NewCathedral_2: 8196649815508872622
+      ERC_NewCathedral_3: 3139337554479899304
+      ERC_NewCathedral_4: 4339945387485643009
+      ERC_NewCathedral_5: -3344315621974513834
+      ERC_NewCathedral_6: 2396230168417275799
+      ERC_NewCathedral_7: -1671882959511347274
+      ERC_NewCathedral_8: -5475920057092411326
+      ERC_NewCathedral_9: -6991021128632913897
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
