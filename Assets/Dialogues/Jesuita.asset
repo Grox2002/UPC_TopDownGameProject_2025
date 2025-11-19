@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1670f1e1355856949b1de1734eb02312, type: 3}
+  m_Name: Jesuita
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  dialogueLines:
+  - characterName: Anciano Jesuita
+    sentence: "Hola peque\xF1o, te he llamado por que los miembros de la orden han
+      desaparecido misteriosamente y no confio en naddie mas para esta misi\xF3n.
+      Hace unos d\xEDas se adentraron en la cripta para orar por la protecci\xF3n
+      de los pueblos ind\xEDgenas, pero no regresaron.\n"
+    portrait: {fileID: -8936346392236667067, guid: aef2ff875b0d78945a4ea7352c437238, type: 3}
+  - characterName: Anciano Jesuita
+    sentence: "Debes seguir el camino a la izquierda, este te llevara a la entrada
+      de la cripta. Iria yo mismo, pero debe quedar alguien que cuide todo por aqu\xED.
+      Resare por tu protecci\xF3n.\n\n"
+    portrait: {fileID: -8936346392236667067, guid: aef2ff875b0d78945a4ea7352c437238, type: 3}
