@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: f739b4a97f24ff8439b0da1b4bf87b3c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2196969543387998752
+    second: Spr_Serafin(boss)_0
+  - first:
+      213: -284886371477820739
+    second: Spr_Serafin(boss)_1
+  - first:
+      213: -1008430269709463190
+    second: Spr_Serafin(boss)_2
+  - first:
+      213: -3639839352169223807
+    second: Spr_Serafin(boss)_3
+  - first:
+      213: -457019060957156748
+    second: Spr_Serafin(boss)_4
+  - first:
+      213: 8439755240688989259
+    second: Spr_Serafin(boss)_5
+  - first:
+      213: -7512591162966506207
+    second: Spr_Serafin(boss)_6
+  - first:
+      213: -7022545941836334396
+    second: Spr_Serafin(boss)_7
+  - first:
+      213: -6268979542191686509
+    second: Spr_Serafin(boss)_8
+  - first:
+      213: -3748604672317381853
+    second: Spr_Serafin(boss)_9
+  - first:
+      213: -4521031883009342084
+    second: Spr_Serafin(boss)_10
+  - first:
+      213: 8065342125596956094
+    second: Spr_Serafin(boss)_11
+  - first:
+      213: 5700093025075475598
+    second: Spr_Serafin(boss)_12
+  - first:
+      213: -6191593007517050319
+    second: Spr_Serafin(boss)_13
+  - first:
+      213: 1141312956970453713
+    second: Spr_Serafin(boss)_14
+  - first:
+      213: -3519546926003126341
+    second: Spr_Serafin(boss)_15
+  - first:
+      213: -1367745621569606723
+    second: Spr_Serafin(boss)_16
+  - first:
+      213: -185497223380015539
+    second: Spr_Serafin(boss)_17
+  - first:
+      213: -5462760913560429193
+    second: Spr_Serafin(boss)_18
+  - first:
+      213: 3369127235321546259
+    second: Spr_Serafin(boss)_19
+  - first:
+      213: 8569409541398551439
+    second: Spr_Serafin(boss)_20
+  - first:
+      213: -1559649466117316335
+    second: Spr_Serafin(boss)_21
+  - first:
+      213: -4500276040574644668
+    second: Spr_Serafin(boss)_22
+  - first:
+      213: -8306206031698074918
+    second: Spr_Serafin(boss)_23
+  - first:
+      213: -5162842786102244346
+    second: Spr_Serafin(boss)_24
+  - first:
+      213: -3328820783959925129
+    second: Spr_Serafin(boss)_25
+  - first:
+      213: 7774956840356110425
+    second: Spr_Serafin(boss)_26
+  - first:
+      213: -8841655615761710313
+    second: Spr_Serafin(boss)_27
+  - first:
+      213: 4728626742932119061
+    second: Spr_Serafin(boss)_28
+  - first:
+      213: -2889957516130161722
+    second: Spr_Serafin(boss)_29
+  - first:
+      213: -7788851357009305758
+    second: Spr_Serafin(boss)_30
+  - first:
+      213: 864102873342448311
+    second: Spr_Serafin(boss)_31
+  - first:
+      213: 5939489251737489433
+    second: Spr_Serafin(boss)_32
+  - first:
+      213: 1902237521168062665
+    second: Spr_Serafin(boss)_33
+  - first:
+      213: 3621944038527121625
+    second: Spr_Serafin(boss)_34
+  - first:
+      213: 7177444440722182123
+    second: Spr_Serafin(boss)_35
+  - first:
+      213: -5757049546378993091
+    second: Spr_Serafin(boss)_36
+  - first:
+      213: -6650274990259398564
+    second: Spr_Serafin(boss)_37
+  - first:
+      213: -3101821912320650253
+    second: Spr_Serafin(boss)_38
+  - first:
+      213: -8899802922262322451
+    second: Spr_Serafin(boss)_39
+  - first:
+      213: -1340376457900991784
+    second: Spr_Serafin(boss)_40
+  - first:
+      213: -4511068504222854640
+    second: Spr_Serafin(boss)_41
+  - first:
+      213: -1560706901500278826
+    second: Spr_Serafin(boss)_42
+  - first:
+      213: 6875470697775079320
+    second: Spr_Serafin(boss)_43
+  - first:
+      213: 1940849108027231097
+    second: Spr_Serafin(boss)_44
+  - first:
+      213: 2267976687817523606
+    second: Spr_Serafin(boss)_45
+  - first:
+      213: 5715484665448000386
+    second: Spr_Serafin(boss)_46
+  - first:
+      213: 8248178021560834388
+    second: Spr_Serafin(boss)_47
+  - first:
+      213: -4205091511687791991
+    second: Spr_Serafin(boss)_48
+  - first:
+      213: 3502796854687615713
+    second: Spr_Serafin(boss)_49
+  - first:
+      213: 3056326262589928710
+    second: Spr_Serafin(boss)_50
+  - first:
+      213: -3965225855858551217
+    second: Spr_Serafin(boss)_51
+  - first:
+      213: -2300503221754809402
+    second: Spr_Serafin(boss)_52
+  - first:
+      213: -1272978786720492215
+    second: Spr_Serafin(boss)_53
+  - first:
+      213: 4643104378082583223
+    second: Spr_Serafin(boss)_54
+  - first:
+      213: -8287921227717812039
+    second: Spr_Serafin(boss)_55
+  - first:
+      213: 3645405366761261500
+    second: Spr_Serafin(boss)_56
+  - first:
+      213: 1412510882445193421
+    second: Spr_Serafin(boss)_57
+  - first:
+      213: 4627425388259405500
+    second: Spr_Serafin(boss)_58
+  - first:
+      213: 331230519093701633
+    second: Spr_Serafin(boss)_59
+  - first:
+      213: 8965939905685469268
+    second: Spr_Serafin(boss)_60
+  - first:
+      213: 1624911364953478921
+    second: Spr_Serafin(boss)_61
+  - first:
+      213: 1289811480790692470
+    second: Spr_Serafin(boss)_62
+  - first:
+      213: 7827291704581507191
+    second: Spr_Serafin(boss)_63
+  - first:
+      213: 4849790232591960951
+    second: Spr_Serafin(boss)_64
+  - first:
+      213: 5452754812902780437
+    second: Spr_Serafin(boss)_65
+  - first:
+      213: -2704773846755615294
+    second: Spr_Serafin(boss)_66
+  - first:
+      213: -2127008754523403461
+    second: Spr_Serafin(boss)_67
+  - first:
+      213: -8279596588159476730
+    second: Spr_Serafin(boss)_68
+  - first:
+      213: -3454757872956380841
+    second: Spr_Serafin(boss)_69
+  - first:
+      213: -6748580257398102796
+    second: Spr_Serafin(boss)_70
+  - first:
+      213: 2739483401316793013
+    second: Spr_Serafin(boss)_71
+  - first:
+      213: 3620371221617765556
+    second: Spr_Serafin(boss)_72
+  - first:
+      213: -8038290687785536102
+    second: Spr_Serafin(boss)_73
+  - first:
+      213: -4059617066153116827
+    second: Spr_Serafin(boss)_74
+  - first:
+      213: 5283457045190440483
+    second: Spr_Serafin(boss)_75
+  - first:
+      213: 8624278634299783195
+    second: Spr_Serafin(boss)_76
+  - first:
+      213: -1595870250179843147
+    second: Spr_Serafin(boss)_77
+  - first:
+      213: -4186744115622865635
+    second: Spr_Serafin(boss)_78
+  - first:
+      213: 1028948094915028870
+    second: Spr_Serafin(boss)_79
+  - first:
+      213: -8566286829072674970
+    second: Spr_Serafin(boss)_80
+  - first:
+      213: 5642817376973624528
+    second: Spr_Serafin(boss)_81
+  - first:
+      213: -1776575962813533412
+    second: Spr_Serafin(boss)_82
+  - first:
+      213: 2984297885419486518
+    second: Spr_Serafin(boss)_83
+  - first:
+      213: 2252870369147577248
+    second: Spr_Serafin(boss)_84
+  - first:
+      213: 1932907221886176799
+    second: Spr_Serafin(boss)_85
+  - first:
+      213: -2509733608106491581
+    second: Spr_Serafin(boss)_86
+  - first:
+      213: 4186476522344875479
+    second: Spr_Serafin(boss)_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a6effd8243d7e10800000000000000
+      internalID: 2196969543387998752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbae6b2ca51eb0cf0800000000000000
+      internalID: -284886371477820739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61573933065102f0800000000000000
+      internalID: -1008430269709463190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1892776d461bc7dc0800000000000000
+      internalID: -3639839352169223807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ae010e59758a9f0800000000000000
+      internalID: -457019060957156748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b443288fca8002570800000000000000
+      internalID: 8439755240688989259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12584a4042aedb790800000000000000
+      internalID: -7512591162966506207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cafbf54ca7ea8e90800000000000000
+      internalID: -7022545941836334396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c3973225c1009a0800000000000000
+      internalID: -6268979542191686509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323272759e74afbc0800000000000000
+      internalID: -3748604672317381853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_Serafin(boss)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c754303b4711241c0800000000000000
+      internalID: -4521031883009342084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5de83c51238ccdd4e8e55b34605294e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Spr_Serafin(boss)_0: 2196969543387998752
+      Spr_Serafin(boss)_1: -284886371477820739
+      Spr_Serafin(boss)_10: -4521031883009342084
+      Spr_Serafin(boss)_2: -1008430269709463190
+      Spr_Serafin(boss)_3: -3639839352169223807
+      Spr_Serafin(boss)_4: -457019060957156748
+      Spr_Serafin(boss)_5: 8439755240688989259
+      Spr_Serafin(boss)_6: -7512591162966506207
+      Spr_Serafin(boss)_7: -7022545941836334396
+      Spr_Serafin(boss)_8: -6268979542191686509
+      Spr_Serafin(boss)_9: -3748604672317381853
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

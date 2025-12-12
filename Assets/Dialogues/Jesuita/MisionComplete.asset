@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1670f1e1355856949b1de1734eb02312, type: 3}
+  m_Name: MisionComplete
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSO
+  dialogueLines:
+  - characterName: Anciano jesuita
+    sentence: "Hola de nuevo, \xA1\xBFHas rescatado a todos nuestros hermanos?! Ah,
+      bendito sea el creador y bendito seas por tu coraje, Dios te bendecira grandemente
+      por esta acci\xF3n. "
+    portrait: {fileID: -8936346392236667067, guid: aef2ff875b0d78945a4ea7352c437238, type: 3}
+  - characterName: Anciano jesuita
+    sentence: Sin embargo, por lo que me cuentas, te has enfrentado a fuerzas oscuras.
+      Toda batalla deja una huella permanente, tomar vidas mancha el alma. Te invito
+      a rezar en nuestra iglesia para purificarte.
+    portrait: {fileID: -8936346392236667067, guid: aef2ff875b0d78945a4ea7352c437238, type: 3}

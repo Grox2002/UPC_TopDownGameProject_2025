@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: 5f7ed87b87494b641a3c8d64025f3289
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2753064208012575129
+    second: BarrilDestruido-Sheet_0
+  - first:
+      213: -110590890117382667
+    second: BarrilDestruido-Sheet_1
+  - first:
+      213: -2569357665922961521
+    second: BarrilDestruido-Sheet_2
+  - first:
+      213: -1760511764258834449
+    second: BarrilDestruido-Sheet_3
+  - first:
+      213: 344966624728870232
+    second: BarrilDestruido-Sheet_4
+  - first:
+      213: 3272956113739455279
+    second: BarrilDestruido-Sheet_5
+  - first:
+      213: 3231579900923363328
+    second: BarrilDestruido-Sheet_6
+  - first:
+      213: -531122998308162597
+    second: BarrilDestruido-Sheet_7
+  - first:
+      213: -4266032371529579667
+    second: BarrilDestruido-Sheet_8
+  - first:
+      213: 5233342627098530550
+    second: BarrilDestruido-Sheet_9
+  - first:
+      213: -772997439784566881
+    second: BarrilDestruido-Sheet_10
+  - first:
+      213: -6310336945972074884
+    second: BarrilDestruido-Sheet_11
+  - first:
+      213: 2918327987059239912
+    second: BarrilDestruido-Sheet_12
+  - first:
+      213: -6388200943988733992
+    second: BarrilDestruido-Sheet_13
+  - first:
+      213: -6382128034435408934
+    second: BarrilDestruido-Sheet_14
+  - first:
+      213: 1894450369521734367
+    second: BarrilDestruido-Sheet_15
+  - first:
+      213: -334242778007293125
+    second: BarrilDestruido-Sheet_16
+  - first:
+      213: 6282291604567478498
+    second: BarrilDestruido-Sheet_17
+  - first:
+      213: 3923615251363745541
+    second: BarrilDestruido-Sheet_18
+  - first:
+      213: 3808859025968757905
+    second: BarrilDestruido-Sheet_19
+  - first:
+      213: 7833959471854316883
+    second: BarrilDestruido-Sheet_20
+  - first:
+      213: 5885413636167937928
+    second: BarrilDestruido-Sheet_21
+  - first:
+      213: -2718587535487206446
+    second: BarrilDestruido-Sheet_22
+  - first:
+      213: 1447259085349468271
+    second: BarrilDestruido-Sheet_23
+  - first:
+      213: -3773031818487076736
+    second: BarrilDestruido-Sheet_24
+  - first:
+      213: -111491561537921132
+    second: BarrilDestruido-Sheet_25
+  - first:
+      213: -293954224569199916
+    second: BarrilDestruido-Sheet_26
+  - first:
+      213: -420144532622295995
+    second: BarrilDestruido-Sheet_27
+  - first:
+      213: -6236002105522788154
+    second: BarrilDestruido-Sheet_28
+  - first:
+      213: 6883244804179874610
+    second: BarrilDestruido-Sheet_29
+  - first:
+      213: 1665033567075937034
+    second: BarrilDestruido-Sheet_30
+  - first:
+      213: 1158765905247564018
+    second: BarrilDestruido-Sheet_31
+  - first:
+      213: 8676981849634768856
+    second: BarrilDestruido-Sheet_32
+  - first:
+      213: 6837734874418064952
+    second: BarrilDestruido-Sheet_33
+  - first:
+      213: -1882855955992785888
+    second: BarrilDestruido-Sheet_34
+  - first:
+      213: 6004643722266448283
+    second: BarrilDestruido-Sheet_35
+  - first:
+      213: 8332855386625021278
+    second: BarrilDestruido-Sheet_36
+  - first:
+      213: -2664313086222821433
+    second: BarrilDestruido-Sheet_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BarrilDestruido-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9918e629f49d43620800000000000000
+      internalID: 2753064208012575129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrilDestruido-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdb82fdb2a177ef0800000000000000
+      internalID: -110590890117382667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrilDestruido-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f2cbdd0dec75cd0800000000000000
+      internalID: -2569357665922961521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrilDestruido-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7b474c0e76197e0800000000000000
+      internalID: -1760511764258834449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrilDestruido-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d6456415199c400800000000000000
+      internalID: 344966624728870232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrilDestruido-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b12ec9e30eb6d20800000000000000
+      internalID: 3272956113739455279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e7ade5c77bab8e042ab8f5119e0eb42f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BarrilDestruido-Sheet_0: 2753064208012575129
+      BarrilDestruido-Sheet_1: -110590890117382667
+      BarrilDestruido-Sheet_2: -2569357665922961521
+      BarrilDestruido-Sheet_3: -1760511764258834449
+      BarrilDestruido-Sheet_4: 344966624728870232
+      BarrilDestruido-Sheet_5: 3272956113739455279
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
