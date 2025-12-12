@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 6202bfca096effb439bd510bb20d271c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2167386677604723838
+    second: SPR_fantasma_moveset_0
+  - first:
+      213: -8612724400305292168
+    second: SPR_fantasma_moveset_1
+  - first:
+      213: -1963233592455626152
+    second: SPR_fantasma_moveset_2
+  - first:
+      213: -2042550936418573023
+    second: SPR_fantasma_moveset_3
+  - first:
+      213: 6346143652081469035
+    second: SPR_fantasma_moveset_4
+  - first:
+      213: 777129739612791218
+    second: SPR_fantasma_moveset_5
+  - first:
+      213: 8742244306884694377
+    second: SPR_fantasma_moveset_6
+  - first:
+      213: -6580962901182711389
+    second: SPR_fantasma_moveset_7
+  - first:
+      213: 7732148491526079542
+    second: SPR_fantasma_moveset_8
+  - first:
+      213: 1491749134017958447
+    second: SPR_fantasma_moveset_9
+  - first:
+      213: -486891181211449961
+    second: SPR_fantasma_moveset_10
+  - first:
+      213: -5117628232467703725
+    second: SPR_fantasma_moveset_11
+  - first:
+      213: 1206310616083647576
+    second: SPR_fantasma_moveset_12
+  - first:
+      213: 3816509102413180790
+    second: SPR_fantasma_moveset_13
+  - first:
+      213: 5518680554267734706
+    second: SPR_fantasma_moveset_14
+  - first:
+      213: 2708337656464762695
+    second: SPR_fantasma_moveset_15
+  - first:
+      213: 3264093951036276774
+    second: SPR_fantasma_moveset_16
+  - first:
+      213: 5149303208908638737
+    second: SPR_fantasma_moveset_17
+  - first:
+      213: -5022568270465236484
+    second: SPR_fantasma_moveset_18
+  - first:
+      213: -4711935944461235077
+    second: SPR_fantasma_moveset_19
+  - first:
+      213: 8869401457584569458
+    second: SPR_fantasma_moveset_20
+  - first:
+      213: 5847434953489420254
+    second: SPR_fantasma_moveset_21
+  - first:
+      213: -8756049428491637476
+    second: SPR_fantasma_moveset_22
+  - first:
+      213: 6848368095621915384
+    second: SPR_fantasma_moveset_23
+  - first:
+      213: 7287735617193328749
+    second: SPR_fantasma_moveset_24
+  - first:
+      213: 7890350448056906371
+    second: SPR_fantasma_moveset_25
+  - first:
+      213: 5591444165268661178
+    second: SPR_fantasma_moveset_26
+  - first:
+      213: 3309323967258709428
+    second: SPR_fantasma_moveset_27
+  - first:
+      213: -5070328577535679198
+    second: SPR_fantasma_moveset_28
+  - first:
+      213: 942918084506332372
+    second: SPR_fantasma_moveset_29
+  - first:
+      213: 3598957218233559798
+    second: SPR_fantasma_moveset_30
+  - first:
+      213: 5158193908018963310
+    second: SPR_fantasma_moveset_31
+  - first:
+      213: -2922090067535463327
+    second: SPR_fantasma_moveset_32
+  - first:
+      213: -6266143499943087159
+    second: SPR_fantasma_moveset_33
+  - first:
+      213: -1675338737341749159
+    second: SPR_fantasma_moveset_34
+  - first:
+      213: 8113264679209602653
+    second: SPR_fantasma_moveset_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 397
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283d47ecc45ebe1e0800000000000000
+      internalID: -2167386677604723838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 396
+        width: 22
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87cb6734ac4797880800000000000000
+      internalID: -8612724400305292168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 396
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8528196037131c4e0800000000000000
+      internalID: -1963233592455626152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 395
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1252127ceb667a3e0800000000000000
+      internalID: -2042550936418573023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 349
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b668aeb3708021850800000000000000
+      internalID: 6346143652081469035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 349
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1230a716be8ca00800000000000000
+      internalID: 777129739612791218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 349
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9611b83f0e0b25970800000000000000
+      internalID: 8742244306884694377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 349
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9fafadb19bba4a0800000000000000
+      internalID: -6580962901182711389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 301
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6340cfb161c1e4b60800000000000000
+      internalID: 7732148491526079542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 301
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22132b0fe1c3b410800000000000000
+      internalID: 1491749134017958447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 301
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7950f93ec073e39f0800000000000000
+      internalID: -486891181211449961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 301
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3589047ac388af8b0800000000000000
+      internalID: -5117628232467703725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 253
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cc2703d1dadb010800000000000000
+      internalID: 1206310616083647576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 253
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fe163dec6f6f430800000000000000
+      internalID: 3816509102413180790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 253
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2fbf199ba469c40800000000000000
+      internalID: 5518680554267734706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 253
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7476569cfb2f59520800000000000000
+      internalID: 2708337656464762695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 205
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620c40197246c4d20800000000000000
+      internalID: 3264093951036276774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 205
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a47cf7cfff57740800000000000000
+      internalID: 5149303208908638737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 205
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf185cac4c04c4ab0800000000000000
+      internalID: -5022568270465236484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 205
+        width: 20
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c4ef13937db9eb0800000000000000
+      internalID: -4711935944461235077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 157
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cf8a132a1761b70800000000000000
+      internalID: 8869401457584569458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 157
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf80f1fb13462150800000000000000
+      internalID: 5847434953489420254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 157
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d6ef2bf634c7680800000000000000
+      internalID: -8756049428491637476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_23
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 157
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2a9aeaf7a4a0f50800000000000000
+      internalID: 6848368095621915384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 109
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6045c78eec332560800000000000000
+      internalID: 7287735617193328749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 109
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382b6c97de7208d60800000000000000
+      internalID: 7890350448056906371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 109
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3e444f7dcc89d40800000000000000
+      internalID: 5591444165268661178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 109
+        width: 20
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd442b5d941ded20800000000000000
+      internalID: 3309323967258709428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 61
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2256971c50392a9b0800000000000000
+      internalID: -5070328577535679198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 61
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dcaa47800be51d00800000000000000
+      internalID: 942918084506332372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_30
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 61
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6faa3aa958012f130800000000000000
+      internalID: 3598957218233559798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_31
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 61
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63ed02b706959740800000000000000
+      internalID: 5158193908018963310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cf9d2c096a277d0800000000000000
+      internalID: -2922090067535463327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_33
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 13
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3f44eafaf2a09a0800000000000000
+      internalID: -6266143499943087159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 13
+        width: 19
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9582b427b4000c8e0800000000000000
+      internalID: -1675338737341749159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_fantasma_moveset_35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 13
+        width: 19
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e03056d3b189070800000000000000
+      internalID: 8113264679209602653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4f2bfca2ea302bf44a3e8c0e7836b30c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_fantasma_moveset_0: -2167386677604723838
+      SPR_fantasma_moveset_1: -8612724400305292168
+      SPR_fantasma_moveset_10: -486891181211449961
+      SPR_fantasma_moveset_11: -5117628232467703725
+      SPR_fantasma_moveset_12: 1206310616083647576
+      SPR_fantasma_moveset_13: 3816509102413180790
+      SPR_fantasma_moveset_14: 5518680554267734706
+      SPR_fantasma_moveset_15: 2708337656464762695
+      SPR_fantasma_moveset_16: 3264093951036276774
+      SPR_fantasma_moveset_17: 5149303208908638737
+      SPR_fantasma_moveset_18: -5022568270465236484
+      SPR_fantasma_moveset_19: -4711935944461235077
+      SPR_fantasma_moveset_2: -1963233592455626152
+      SPR_fantasma_moveset_20: 8869401457584569458
+      SPR_fantasma_moveset_21: 5847434953489420254
+      SPR_fantasma_moveset_22: -8756049428491637476
+      SPR_fantasma_moveset_23: 6848368095621915384
+      SPR_fantasma_moveset_24: 7287735617193328749
+      SPR_fantasma_moveset_25: 7890350448056906371
+      SPR_fantasma_moveset_26: 5591444165268661178
+      SPR_fantasma_moveset_27: 3309323967258709428
+      SPR_fantasma_moveset_28: -5070328577535679198
+      SPR_fantasma_moveset_29: 942918084506332372
+      SPR_fantasma_moveset_3: -2042550936418573023
+      SPR_fantasma_moveset_30: 3598957218233559798
+      SPR_fantasma_moveset_31: 5158193908018963310
+      SPR_fantasma_moveset_32: -2922090067535463327
+      SPR_fantasma_moveset_33: -6266143499943087159
+      SPR_fantasma_moveset_34: -1675338737341749159
+      SPR_fantasma_moveset_35: 8113264679209602653
+      SPR_fantasma_moveset_4: 6346143652081469035
+      SPR_fantasma_moveset_5: 777129739612791218
+      SPR_fantasma_moveset_6: 8742244306884694377
+      SPR_fantasma_moveset_7: -6580962901182711389
+      SPR_fantasma_moveset_8: 7732148491526079542
+      SPR_fantasma_moveset_9: 1491749134017958447
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
